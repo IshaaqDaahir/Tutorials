@@ -1,0 +1,7 @@
+<form action="{% url 'add' %}" method='POST'>
+    {% csrf_token %}
+
+    <input type="text" name='title' id='title' placeholder='Movie title'>
+    <input type="text" name='year' id='year' placeholder='Movie year'>
+    <input type="submit" value='Add'>
+</form>
