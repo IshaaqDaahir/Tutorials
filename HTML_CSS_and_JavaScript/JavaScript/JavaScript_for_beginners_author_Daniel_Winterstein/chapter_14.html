@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Looping</title>
+        <style>
+          body{
+            text-align: center;
+          }
+          table{
+            border: 1px solid black;
+            margin-left: 46.5%;
+          }
+          td{
+            border: 1px solid black;
+          }
+          
+        </style>
+
+        <script>
+           
+        </script>
+    </head>
+    <body>
+      <h1>The 12x Multiplication Table</h1>
+
+      <table id="multiplication_table"></table>
+        <script>
+          /* for (i = 0; i <= 100; i = i + 10){
+            document.write("<p>" + i + "</p>");
+          } */
+          // document.write(i + " x 12 = " + (i*12) + "</p>");
+
+          var multiplication_table = document.getElementById("multiplication_table");
+          var tableData = "";
+          for (var i = 1; i <= 12; i++){
+            tableData = tableData + "<tr><td>" + i + "</td><td> x 12 = </td><td>" + (i*12) + "</td></tr>";
+          }
+          multiplication_table.innerHTML = tableData;
+        </script>
+    </body>
+</html>

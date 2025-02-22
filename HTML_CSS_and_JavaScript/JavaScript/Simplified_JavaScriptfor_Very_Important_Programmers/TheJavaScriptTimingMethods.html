@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>The JavaScript Timing Methods</title>
+
+        <style>
+            body{
+                margin-top: 10%;
+                margin-left: 40%;
+                background-color: lightgray;
+            }
+        </style>
+
+        <script>
+            const displayMessage = () => {
+                alert("Hello, world");
+            }
+
+            /* // setTimeout(displayMessage, 5000);
+            const timerId = setTimeout(displayMessage, 5000);
+            // alert(timerId);
+
+            clearTimeout(timerId); */
+
+            const interval = setInterval(displayMessage, 1000);
+
+            clearInterval(interval);
+       </script>
+    </head>
+    <body>
+
+        
+        
+        <script>
+            
+        </script>
+    </body>
+</html>

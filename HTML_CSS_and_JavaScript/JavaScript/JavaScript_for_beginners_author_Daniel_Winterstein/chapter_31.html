@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Javascript and Forms</title>
+
+        <style>
+            body{
+                margin-left: 30%;
+                padding-top: 5%;
+            }
+        </style>
+
+        <script>
+            /* function process_form() {
+                objForm = document.getElementById("Enquiry");
+                strValue = objForm.name.value;
+            }
+            
+            print_On = process_form();
+            document.write(print_On); */
+
+            function check_form() {
+                objForm = document.getElementById("jsCourseForm");
+                strValue = objForm.name.value;
+
+                if (strValue != "Bugs Bunny") {
+                    alert("Sorry chum!\nEither you misspelled your name…\nOr you haven’t got what it takes…\nTry again.");
+                    return false;
+                } else {
+                    return true;
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <!-- <form action="process.php" id="enquiryform" method="post" onsubmit="return process_form();">
+            <label for="Enquiry">Username:</label>
+            <input type="text" name="username" id="Enquiry">
+            <br><br>
+            <label for="password">Password:</label>
+            <input type="password" name="password" id="password">
+            <input type="submit" value="submit">
+        </form> -->
+
+        <form action="processing_31.html" id="jsCourseForm" method="get" onsubmit="return check_form();">
+            <label for="text">Enter something here:</label>
+            <input type="text" name="name">
+            <input type="submit">
+        </form>
+
+
+        <script>
+            
+        </script>
+    </body>
+</html>

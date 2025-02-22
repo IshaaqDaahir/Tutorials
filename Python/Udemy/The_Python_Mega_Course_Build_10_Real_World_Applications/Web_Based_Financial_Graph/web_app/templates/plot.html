@@ -1,0 +1,21 @@
+{%extends "layout.html"%}
+{%block content%}
+<!-- <style>
+    html, body {
+    box-sizing: border-box;
+    display: flow-root;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+</style> -->
+<!-- <link rel="stylesheet" href="{{url_for('static',filename='css/plot.css')}}"> -->
+<script type="text/javascript" src={{cdn_js | safe}}></script>
+
+<div class="about">
+    <h1>My about page</h1>
+    <p>This is a test website again</p>
+</div>
+{{script1 | safe}}
+{{div1 | safe}}
+{%endblock%}

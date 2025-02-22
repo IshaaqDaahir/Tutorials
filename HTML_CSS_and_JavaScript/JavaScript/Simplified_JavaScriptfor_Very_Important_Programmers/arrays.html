@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Arrays</title>
+
+        <style>
+            body{
+                margin-top: 10%;
+                margin-left: 40%;
+                background-color: lightgray;
+            }
+        </style>
+
+        <script>
+            // const myArray = new Array();
+
+            // const myArray = [];
+
+            const favoriteFruits = new Array(
+                "Apple",
+                "Banana",
+                "Orange"
+            );
+            favoriteFruits[0] = "Strawberry";
+            // const favoriteFruits = ["Apple", "Banana", "Orange"];
+            // alert(favoriteFruits.length);
+
+            push = (favoriteFruits.push("Mango", "Pineapple"));
+
+            (favoriteFruits.pop());
+            
+            (favoriteFruits.shift());
+
+
+            (favoriteFruits.unshift("Lemon", "Grape"));
+
+            (favoriteFruits.indexOf("Banana"));
+
+            (favoriteFruits.indexOf("Watermelon"));
+
+            const topThreeFruits = favoriteFruits.slice(0, 3);
+
+            const fruitsInTheBasket = favoriteFruits.slice(2)
+
+            const lastFruit = favoriteFruits.slice(-1);
+
+            const lastTwoFruits = favoriteFruits.slice(-2);
+
+            favoriteFruits.splice(0, 2, "Cherry", "Avocado");
+
+            favoriteFruits.splice(0, 2);
+
+            const favoriteFruitsString = favoriteFruits.join();
+
+            const newfavoriteFruitsString = favoriteFruits.join(" and ");
+
+            favoriteFruits.reverse();
+
+            const numbers = [1, 2, 3, 4, 5];
+
+            /* const squaredNumbers = numbers.map(
+                (number) => number * number 
+            );
+
+            alert(squaredNumbers); */
+
+            const words = ["this", "is", "such", "a", "great", "day"];
+            const capitalizedWords = words.map(
+                (word) => word.toUpperCase() 
+            );
+
+            alert(capitalizedWords);
+       </script>
+    </head>
+    <body>
+
+        
+        
+        <script>
+            
+        </script>
+    </body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Actions From Menu Items</title>
+
+        <style>
+            body{
+                margin-left: 30%;
+                padding-top: 5%;
+            }
+            label{
+                font-weight: bold;
+            }
+        </style>
+
+        <script>
+          /* function chosen() {
+            val = document.getElementById("menu").product.value;
+            alert(val);
+          } */
+
+          function  jump_to_page() {
+            chosen = document.getElementById("jumpMenu").menu.value;
+            
+            if (chosen != "") {
+                window.location.href = (chosen);
+            } 
+            else {
+                window.location.href = ("");
+            }
+          }
+        </script>
+    </head>
+    <body>
+       <!-- <form id="menu">
+            <select name="product" onchange="chosen();">
+                <option value="one">Image one</option>
+                <option value="two">Image two</option>
+                <option value="three">Image three</option>
+            </select>
+       </form> -->
+
+       <form action="" id="jumpMenu">
+            <select name="menu" onchange="jump_to_page();">
+                <option value="">Select a destination</option>
+                <option value="http://www.bbc.co.uk/">The BBC</option>
+                <option value="http://www.google.com/">Google</option>
+                <option value="http://www.hotmail.com/">Hotmail</option>
+                <option value="http://www.ed.ac.uk/">The University of Edinburgh</option>
+                <option value="http://www.apple.com/">Apple Computer</option>
+                <option value="http://www.microsoft.com/">Microsoft Corporation</option>
+            </select>
+       </form>
+    </body>
+</html>

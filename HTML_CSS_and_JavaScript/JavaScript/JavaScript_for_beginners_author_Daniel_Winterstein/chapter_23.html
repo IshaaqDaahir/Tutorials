@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Simple Image Rollovers</title>
+
+        <style>
+          
+        </style>
+
+        <script>
+            /* function swap_image(id, new_image) {
+                img = document.getElementById(id);
+                img.src = new_image;
+            } */
+
+            /* function swap_image(img, new_image) {
+                img.src = new_image;
+            } */
+
+            function swap_image(id, file_name) {
+                img = document.getElementById(id);
+                img.src = file_name;
+            }
+        </script>
+    </head>
+    <body>
+        <!-- <img src="img_flowers.jpg" id="button" 
+            onmouseover="swap_image('button', 'car-mechanic-working-auto-repair-service-professional-31414293.jpg');"
+            onmouseout="swap_image('button', 'img_flowers.jpg');"> -->
+
+           <!--  <p><img src="img_flowers.jpg" id="button" 
+            onmouseover="swap_image(this, 'car-mechanic-working-auto-repair-service-professional-31414293.jpg');"
+            onmouseout="swap_image(this, 'img_flowers.jpg');"></p> -->
+
+            <p><img src="car-mechanic-working-auto-repair-service-professional-31414293.jpg" alt=""
+                width="500" height="500" id="car"></p>
+
+            <p><a href="#" onmouseover="swap_image('car', 'img_flowers.jpg');"
+                onmouseout="swap_image('car', 'car-mechanic-working-auto-repair-service-professional-31414293.jpg');"
+                >Text</a></p>
+
+            <p><img src="six_images/contacts.jpg" id="contacts" width="500" height="500" 
+                onmouseover="swap_image('contacts', 'six_images/contactsover.jpg');"
+                onmouseout="swap_image('contacts', 'six_images/contacts.jpg');"></p>
+
+            <p><img src="six_images/home.jpg" id="home" width="500" height="500"
+                onmouseover="swap_image('home', 'six_images/IMG_20220417_081420_038.jpg');"
+                onmouseout="swap_image('home', 'six_images/home.jpg');"></p>
+
+            <p><img src="six_images/people.jpg" id="people" width="500" height="500"
+                onmouseover="swap_image('people', 'six_images/IMG_20220417_081435_287.jpg');"
+                onmouseout="swap_image('people', 'six_images/people.jpg');"></p>
+
+            <p><img src="six_images/products.jpg" id="products" width="500" height="500"
+                onmouseover="swap_image('products', 'six_images/IMG_20220417_081437_446.jpg');"
+                onmouseout="swap_image('products', 'six_images/products.jpg');"></p>
+            
+            <p><img src="six_images/quotes.jpg" id="quotes" width="500" height="500"
+                onmouseover="swap_image('quotes', 'six_images/IMG_20220417_081456_664.jpg');"
+                onmouseout="swap_image('quotes', 'six_images/quotes.jpg');"></p>
+
+            <p><img src="six_images/whatsnew.jpg" id="whatsnew" width="500" height="500"
+                onmouseover="swap_image('whatsnew', 'six_images/IMG_20220417_081643_939.jpg');"
+                onmouseout="swap_image('whatsnew', 'six_images/whatsnew.jpg');"></p>
+        <script>
+            // button_img = document.getElementById("button");
+            // button_img.src = "car-mechanic-working-auto-repair-service-professional-31414293.jpg";
+        </script>
+    </body>
+</html>

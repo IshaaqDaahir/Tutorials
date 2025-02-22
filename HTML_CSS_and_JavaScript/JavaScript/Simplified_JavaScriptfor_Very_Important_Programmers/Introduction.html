@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Introduction</title>
+
+        <style>
+            body{
+                margin-top: 10%;
+                margin-left: 40%;
+                background-color: lightgray;
+            }
+        </style>
+
+        <script>
+            function multiplyByTwo(value) {
+                if (isNaN(value)) {
+                    return "Value must be a number!";
+                }
+
+                const result = value * 2;
+                return result; 
+                
+            }
+            
+            // IIFE (Immediately Invoked Function Expression), or anonymous; without a name.
+
+            /* (function () {
+                return alert("I'm a function, and I'm anonymous!");
+            })(); */
+
+            // If we want to re-use the function we assign it to a variable, and call the variable as a function. 
+            const alertUser = function () {
+                return (
+                    alert("I'm anonymous, and you can reference me by a name!"));
+            }
+
+            // alertUser();
+
+            /* // Fat arrow function.
+            const squareNumber = function (value) {
+                return value * value;
+            }
+
+            // alert(squareNumber(5)); */
+
+            /* // The equivalent arrow function would look like this:
+
+            // We can omit the parenthesis around the parameter if it's only one parameter.
+
+            const squareOfNumber = (value) => value * value;
+            alert(squareOfNumber(5)) */
+
+            // We can use it with curly braces but with return keyword.
+
+            const squareOfNumber = (value) => {
+                return value * value;
+            }
+            
+            alert(squareOfNumber(4));
+       </script>
+    </head>
+    <body>
+
+        
+        
+        <script>
+            
+        </script>
+    </body>
+</html>

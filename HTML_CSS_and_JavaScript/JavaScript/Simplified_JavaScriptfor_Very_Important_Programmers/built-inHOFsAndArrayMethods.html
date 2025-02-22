@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Built-in HOFs and Array Methods</title>
+
+        <style>
+            body{
+                margin-top: 10%;
+                margin-left: 40%;
+                background-color: lightgray;
+            }
+        </style>
+
+        <script>
+            const namesOfPeople = ["oluchi", "jude", "kanye", "tiwa"];
+
+            // namesOfPeople.forEach((name) => alert(name));
+
+            const titleCasedNames = [];
+
+            namesOfPeople.forEach((name) => {
+                const titleCasedName = name[0].toUpperCase() + name.slice(1);
+                titleCasedNames.push(titleCasedName);
+            })
+
+            // alert(titleCasedNames);
+
+            const countries = [
+                "Nigeria",
+                "UK",
+                "Netherlands", 
+                "Canada",
+                "USA",
+                "Norway"
+            ];
+
+            const countriesThatStartWithN = countries.filter(
+                (country) => country.startsWith("N")
+            );
+
+            // alert(countriesThatStartWithN);
+
+            const countriesThatStartWithU = countries.filter(
+                // (country) => country.charAt(0) === "U"
+                (country) => country.charAt(0) === "U"
+            );
+
+            // alert(countriesThatStartWithU);
+
+            const countriesThatDontStartWithN = countries.filter(
+                // (country) => !country.startsWith("N")
+                // (country) => country.charAt(0) !== "N"
+                (country) => country[0] !== "N"
+            );
+
+            // alert(countriesThatDontStartWithN);
+
+            const numbers = [7, 4, 3, 1, 5, 2, 8, 6];
+            numbers.sort();
+
+            // alert(numbers);
+
+            const favoriteColors = [
+                "Red",
+                "Blue",
+                "Green", 
+                "Yellow",
+                "Orange"
+            ];
+            favoriteColors.sort();
+
+            // alert(favoriteColors);
+
+            const famousBirthYears = [
+                1990, 2001, 1989, 2023, 2005, 1993, 2020
+            ];
+            // famousBirthYears.sort((a, b) => b - a);
+
+            famousBirthYears.sort((a, b) => a - b);
+
+            // alert(famousBirthYears);
+
+            const agesOfStudents = [13, 10, 15, 12, 11, 14];
+            agesOfStudents.reverse();
+
+            // alert(agesOfStudents);
+
+            const participantPoints = [10, 20, 30, 40, 50];
+            const totalPoints = participantPoints.reduce(
+                (a, b) => a + b
+            );
+
+            // alert(totalPoints);
+
+            const minusedPoints = participantPoints.reduce(
+                (a, b) => a - b
+            );
+
+            // alert(minusedPoints);
+
+            const multipliedPoints = participantPoints.reduce(
+                (a, b) => a * b
+            );
+
+            // alert(multipliedPoints);
+
+            const favoriteDishes = [
+                "jollof",
+                "burger",
+                "yam",
+                "meatloaf",
+                "pizza"
+            ];
+
+            const favoriteDishesString = favoriteDishes.reduce(
+                (a, b) => a + ", " + b
+            );
+
+            // alert(favoriteDishesString);
+
+            const participantAges = [20, 25, 14, 29, 30, 17];
+            const areAllParticipantsOlderThan18 = participantAges.every(
+                (age) => age > 18
+            );
+            // alert(areAllParticipantsOlderThan18);
+
+            const areAllParticipantsOlderThan10 = participantAges.every(
+                (ages) => ages > 10 
+            );
+            // alert(areAllParticipantsOlderThan10);
+
+            const cities = [
+                "Massachusetts",
+                "Enugu",
+                "Vienna",
+                "Abuja",
+                "London"
+            ];
+            const atLeastOneCityHasE = cities.some(
+                (city) => city.includes("e")
+            );
+            // alert(atLeastOneCityHasE);
+
+            const allCitiesHasE = cities.every(
+                (city) => city.includes("e")
+            );
+            // alert(allCitiesHasE);
+
+            // alert(cities.includes("Abuja"));
+
+            const quantities = [7, 3, 9, 13, 5, 11];
+            const firstQuantityGreaterThan10 = quantities.find(
+                (quantity) => quantity > 10
+            );
+            // alert(firstQuantityGreaterThan10);
+
+            const preciousMetals = ["Pummed", "Printer", "Cybertruck", 30];
+            const firstMetalThatStartsWithP = preciousMetals.findIndex(
+                (metal) => metal.startsWith("P")
+            );
+            // alerts(firstMetalThatStartsWithP);
+       </script>
+    </head>
+    <body>
+
+        
+        
+        <script>
+            
+        </script>
+    </body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Focus and Blur</title>
+
+        <style>
+            body{
+                margin-left: 30%;
+            }
+        </style>
+
+        <script>
+            function view_new_logo_1() {
+                win_width = 500;
+                win_height = 600;
+
+                win_left = (screen.availWidth) - (win_width/2);
+                win_top = (screen.availHeight) - (win_height/2);
+
+                objNewLogo = window.open("RocolLogo", "logo", "width=500,height=600,left="+win_left+"top="+win_top);
+                RocolLogo = "rocollogo.jpg";
+                objNewLogo.onfocus() = view_new_logo();
+            }
+
+            function view_new_logo_2() {
+                win_width = 500;
+                win_height = 600;
+
+                win_left_old = (screen.availWidth/3) - (win_width);
+                win_top_old = (screen.availHeight/3) - (win_height);
+
+                objOldLogo = window.open("oldRocolLogo", "oldlogo", "width=500,height=600,left="+win_left_old+"top="+win_top_old);
+                oldRocolLogo = "oldRocolLogo.jpg";
+                objOldLogo.onfocus() = view_new_logo();
+            }
+
+           /*  new_window = view_new_logo();
+            new_window.focus();
+            new_window.blur();
+
+            new_window.onfocus() = view_new_logo(); */
+        </script>
+    </head>
+    <body>
+        <p><a href="rocollogo.jpg" target="logo" onclick="view_new_logo_1();">Logo</a></p>
+        <p><a href="oldRocolLogo.jpg" target="oldlogo" onclick="view_new_logo_2();">Old Logo</a></p>
+        <script>
+            
+        </script>
+    </body>
+</html>

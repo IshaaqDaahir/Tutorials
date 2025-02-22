@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Chapter 5: Tables</title>
+        <script>
+            
+        </script>
+        <style>
+            body{
+                margin-top: 30px;
+                margin-left: 30%;
+            }
+
+            table, td, th, tr{
+                border: 2px solid black;
+                border-collapse: collapse;
+            }
+
+            th, td, tr{
+                padding: 10px;
+            }
+
+            .one{
+                background-color: brown;
+            }
+
+            .two{
+                background-color: red;
+            }
+
+            .three{
+                background-color: green;
+            }
+        </style>
+    </head>
+    <body>
+        <table>
+            <caption>Table Rows And Columns</caption>
+            <tr>
+                <th>Row 1, Column 1</th>
+                <td>Row 1, Column 2</td>
+            </tr>
+            <tr>
+                <th>Row 2, Column 1</th>
+                <td>Row 2, Column 2</td>
+            </tr>
+        </table>
+
+        <br><br>
+        
+        <table>
+            <caption>Business Income And Profit</caption>
+            <tr>
+                <th></th>
+                <th scope="rowgroup">Outgoings ($)</th>
+                <th>Receipts ($)</th>
+                <th>Profit ($)</th>
+            </tr>
+            <tr headers="income q1">
+                <th>Quater 1 (Jan-Mar)</th>
+                <td>11,200.00</td>
+                <td>21,800.00</td>
+                <td><b>10,600.00</b></td>
+            </tr>
+            <tr>
+                <th>Quater 2 (Apr-Jun)</th>
+                <td>11,700.00</td>
+                <td>22,500.00</td>
+                <td><b>10,800.00</b></td>
+            </tr>
+            <tr>
+                <th>Quater 3 (Jul-Sep)</th>
+                <td>11,650.00</td>
+                <td>22,100.00</td>
+                <td><b>10,450.00</b></td>
+            </tr>
+            <tr>
+                <th>Quater 4 (Oct-Dec)</th>
+                <td>18,850.00</td>
+                <td>22,900.00</td>
+                <td><b>11,050.00</b></td>
+            </tr>
+        </table>
+
+        <br><br>
+
+        <table style="width: 52.7%;">
+            <caption>Spanning Columns Using The Colspan Attribute</caption>
+            <tr class="one">
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr class="two">
+                <td>&nbsp;</td>
+                <td colspan="2">&nbsp;</td>
+            </tr>
+            <tr class="three">
+                <td colspan="3">&nbsp;</td>
+            </tr>
+        </table>
+
+        <br><br>
+
+        <table style="width: 52.7%;">
+            <caption>Spanning Rows Using The Rowspan Attribute</caption>
+            <tr class="one">
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td rowspan="3">&nbsp;</td>
+            </tr>
+            <tr class="two">
+                <td>&nbsp;</td>
+                <td rowspan="2">&nbsp;</td>
+            </tr>
+            <tr class="three">
+                <td>&nbsp;</td>
+            </tr>
+        </table>
+
+        <br><br>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Transaction Date</th>
+                    <th>Paymnt Type And Details</th>
+                    <th>Paid Out</th>
+                    <th>Paid In</th>
+                    <th>Balance</th>
+                </tr>
+            </thead>
+            <tfoot>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td>$1,970.27</td>
+                    <td>$2,450.00</td>
+                    <td>$8,940.88</td>
+                </tr>
+            </tfoot>
+            <tbody>
+                <tr>
+                    <td>12 Jun 12</td>
+                    <td>Amazon.com</td>
+                    <td>$49.99</td>
+                    <td></td>
+                    <td>$8,411.16</td>
+                </tr>
+                <tr>
+                    <td>13 Jun 12</td>
+                    <td>Total</td>
+                    <td>$60.00</td>
+                    <td></td>
+                    <td>$8,351.16</td>
+                </tr>
+                <tr>
+                    <td>14 Jun 12</td>
+                    <td>Whole Foods</td>
+                    <td>$75.28</td>
+                    <td></td>
+                    <td>$8,275.88</td>
+                </tr>
+                <tr>
+                    <td>14 Jun 12</td>
+                    <td>Visa Payment</td>
+                    <td>$350.00</td>
+                    <td></td>
+                    <td>$7,925.88</td>
+                </tr>
+                <tr>
+                    <td>15 Jun 12</td>
+                    <td>Cheque 122501</td>
+                    <td></td>
+                    <td>$1,450.00</td>
+                    <td>$9,375.88</td>
+                </tr>
+            </tbody>
+            <tbody>
+                <tr>
+                    <td>17 Jun 12</td>
+                    <td>Murco</td>
+                    <td>$60.00</td>
+                    <td></td>
+                    <td>$9,315.88</td>
+                </tr>
+                <tr>
+                    <td>18 Jun 12</td>
+                    <td></td>
+                    <td></td>
+                    <td>$1,000.00</td>
+                    <td>$10,315.88</td>
+                </tr>
+                <tr>
+                    <td>18 Jun 12</td>
+                    <td>McLellans Bakery</td>
+                    <td>$25.00</td>
+                    <td></td>
+                    <td>$10,290.88</td>
+                </tr>
+                <tr>
+                    <td>18 Jun 12</td>
+                    <td>Apple Store</td>
+                    <td>$1,350.00</td>
+                    <td></td>
+                    <td>$8,940.88</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <script>
+           
+        </script>
+    </body>
+</html>

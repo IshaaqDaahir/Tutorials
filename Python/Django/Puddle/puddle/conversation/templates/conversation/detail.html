@@ -1,0 +1,28 @@
+{% extends "core/base.html" %}
+
+{% block title %}Conversation{% endblock title %}
+
+{% block content %}
+    <h1 class="mb-6 text-3xl">Conversation</h1>
+
+    <div class="space-y-6">
+        {% for message in conversation.messages.all %}
+            <div class="p-6 flex {% if message.created_by == request.user %} bg-blue-100 {% else %} bg-gray-100 {% endif %} rounded-xl">
+                <div>
+                    <p class="mb-4"><strong>{{ message.created_by.username }}</strong> @ {{ message.created_at }}</p>
+                    <p>{{ message.content }}</p>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+
+    <form action="{% url 'conversation:detail' conversation.id %}" method="post">
+        {% csrf_token %}
+        <div class="mt-6">
+            <label for="content" class="block mb-2">Message</label>
+            <textarea name="content" id="content" class="w-full p-4 border border-gray-300 rounded-xl" rows="4"></textarea>
+        </div>
+        <div class="mt-6">
+            <button type="submit" class="bg-blue-500 text-white px-6 py-2 rounded-xl">Send</button>
+        </div>
+{% endblock content %}

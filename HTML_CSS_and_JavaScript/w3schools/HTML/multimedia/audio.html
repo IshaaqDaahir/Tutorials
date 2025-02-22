@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Multimedia</title>
+    </head>
+    <body>
+       <!--  <h1>Horse Audio</h1>
+        <audio controls>
+            <source src="https://www.w3schools.com/html/horse.ogg" type="audio/ogg">
+            <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+
+        <h1>Audio Autoplay</h1>
+        <audio controls autoplay>
+            <source src="https://www.w3schools.com/html/horse.ogg" type="audio/ogg">
+            <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+
+        <h1>Audio Autoplay Muted</h1>
+        <audio controls autoplay muted>
+            <source src="https://www.w3schools.com/html/horse.ogg" type="audio/ogg">
+            <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio> -->
+
+        <h1>Methods, Properties, and Events</h1>
+        <div style="text-align: center;">
+            <button onclick="playPause()">Play/Pause</button>
+            <br><br>
+            <audio id="audio1" controls>
+                <source src="https://www.w3schools.com/html/horse.ogg" type="audio/ogg">
+                <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+
+        <script>
+            var myAudio = document.getElementById("audio1");
+            
+            function playPause() {
+                    if (myAudio.paused) {
+                        myAudio.play();
+                    }
+                    else
+                        myAudio.pause();
+            }
+        </script>
+    </body>
+</html>

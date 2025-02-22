@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My First CSS Example</title>
+
+        <style>
+            /* CSS Introduction */
+            /* body{
+                background-color: lightblue;
+            }
+            h1{
+                color: white;
+                text-align: center;
+            }
+            p{
+                font-family: Verdana;
+                font-size: 20px;
+            } */
+
+            /* CSS Syntax */
+            /* p{
+                color: red;
+                text-align: center;
+            } */
+            
+            /* The CSS id Selector */
+           /*  #para1{
+                color: red;
+                text-align: center;
+            } */
+
+            /* CSS class Selector */
+            /* .center{
+                color: red;
+                text-align: center;
+            } */
+
+            /* Specific HTML Element Should Be Affected By a Class */
+            /* p.center{
+                color: red;
+                text-align: center;
+            } */
+
+            /* HTML elements can also refer to more than one class */
+           /*  p.center{
+                text-align: center;
+                color: red;
+            }
+            .large{
+                font-size: 300%;
+            } */
+
+            /* The CSS Universal Selector */
+            /* * {
+                text-align: center;
+                color: blue;
+            } */
+
+            /* The CSS Grouping Selector */
+            /* h1, h2, p{
+                text-align: center;
+                color: red;
+            } */
+
+            /* 3-Digit HEX Values */
+            /* Same as #ffcc99 */
+            /* body{
+                background-color: #fc9; 
+            } */
+
+            /* Same as #ff00ff */
+            /* h1{
+                color: #f0f; 
+            } */
+
+            /* Same as #bb5588 */
+            /* p{
+                color: #b58; 
+            } */
+
+            /* Other Elements */
+            /* h1{
+                background-color: green;
+            }
+            div{
+                background-color: lightblue;
+            }
+            p{
+                background-color: yellow;
+            } */
+
+            /* Opacity / Transparency */
+            /* div{
+                background-color: green;
+            }
+            div.first{
+                opacity: 0.1;
+            }
+            div.second{
+                opacity: 0.3;
+            }
+            div.third{
+                opacity: 0.6;
+            } */
+
+            /* Transparency That Does Not Affect Child Element */
+            div{
+                background: rgba(0, 128, 0.1);
+            }
+            div.first{
+                background: rgba(0, 128, 0, 0.3);
+            }
+            div.second{
+                background: rgba(0, 128, 0, 0.6);
+            }
+        </style>
+    </head>
+    <body>
+        <!-- <h1>CSS Introduction</h1>
+        <h1>My First CSS Example</h1>
+        <p>This is a paragraph.</p> -->
+<!-- 
+        <h1>CSS Syntax</h1>
+        <p>Hello World</p>
+        <p>These paragraphs are styled with CSS.</p> -->
+
+        <!-- <h1>The CSS id Selector</h1>
+        <p id="para1">Hello World!</p>
+        <p>This paragraph is not affected by the style.</p> -->
+
+       <!--  <h1>The CSS class Selector</h1>
+        <h1 class="center">Red and center-aligned heading</h1>
+        <p class="center">Red and center-aligned paragraph.</p> -->
+        
+        <!-- <h1>Specific HTML Element Should Be Affected By a Class</h1>
+        <h1 class="center">This heading will not be affected</h1>
+        <p class="center">This paragraph will be red and center-aligned.</p> -->
+
+        <!-- <h1>HTML elements can also refer to more than one class</h1>
+        <h1 class="center">This heading will not be affected</h1>
+        <p class="center">This paragraph will be red and center-aligned.</p>
+        <p class="center large">This paragraph will be red, center-aligned, and in a large font-size.</p>
+         -->
+
+        <!-- <h1>The CSS Universal Selector</h1>
+
+        <h1>Hello World</h1>
+        <p>Every element on the page will be affected by the style.</p>
+        <p id="para1">Me too!</p>
+        <p>And me!</p> -->
+
+        <!-- <h1>The CSS Grouping Selector</h1>
+
+        <h1>Hello World</h1>
+        <h2>Smaller Heading</h2>
+        <p>This is a paragraph.</p> -->
+<!-- 
+        <h1>CSS Color Names</h1>
+
+        <h1 style="background-color: tomato;">Tomato</h1>
+        <h1 style="background-color: orange;">Orange</h1>
+        <h1 style="background-color: dodgerblue;">DodgerBlue</h1>
+        <h1 style="background-color: mediumseagreen;">MediumSeaGreen</h1>
+        <h1 style="background-color: gray;">Gray</h1>
+        <h1 style="background-color: slateblue;">SlateBlue</h1>
+        <h1 style="background-color: violet;">Violet</h1>
+        <h1 style="background-color: lightgray;">LightGray</h1> -->
+
+       <!--  <h1>CSS Background Color</h1>
+
+        <h1 style="background-color: dodgerblue;">Hello World</h1>
+        <p style="background-color: tomato;">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, 
+            sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi 
+            enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip 
+            ex ea commodo consequat.
+        </p> -->
+
+       <!--  <h1>CSS Text Color</h1>
+
+        <h3 style="color: tomato;">Hello World</h3>
+
+        <p style="color: dodgerblue;">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod 
+            tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+
+        <p style="color: mediumseagreen;">Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut 
+            aliquip ex ea commodo consequat.</p> -->
+
+        <!-- <h1>CSS Border Color</h1>
+
+        <h1 style="border: 2px solid tomato;">Hello World</h1>
+        <h1 style="border: 2px solid dodgerblue;">Hello World</h1>
+        <h1 style="border: 2px solid violet;">Hello World</h1> -->
+
+        <!-- <h1>3-Digit HEX Values</h1>
+
+        <h1>CSS 3-Digit Hex Code</h1>
+        <p>This is a paragraph.</p> -->
+
+       <!--  <h1>Other Elements</h1>
+
+        <h1>CSS background-color example!</h1>
+        <div>
+            This is a text inside a div element.
+            <p>This paragraph has its own background color.</p>
+            We are still in the div element.
+        </div> -->
+
+        <!-- <h1>Opacity / Transparency</h1>
+
+        <h1>Transparent Boxes</h1>
+        <p>When using the opacity property to add transparency to the background of an element, all of its 
+            child elements become transparent as well. This can make the text inside a fully transparent 
+            element hard to read:</p>
+
+        <div class="first">
+            <h1>opacity 0.1</h1>
+        </div>
+
+        <div class="second">
+            <h1>opacity 0.3</h1>
+        </div>
+
+        <div class="third">
+            <h1>opacity 0.6</h1>
+        </div>
+
+        <div>
+            <h1>opacity 1 (default)</h1>
+        </div> -->
+
+        <h1>Transparency That Does Not Affect Child Element</h1>
+
+        <h1>GTransparent Boxes 2</h1>
+        <p>Result with opacity:</p>
+
+        <div style="opacity: 0.1;">
+            <h1>10% opacity</h1>
+        </div>
+
+        <div style="opacity: 0.3;">
+            <h1>30% opacity</h1>
+        </div>
+
+        <div style="opacity: 0.6;">
+            <h1>60% opacity</h1>
+        </div>
+
+        <div>
+            <h1>opacity 1 (100%)</h1>
+        </div>
+
+        <p>Result with rgba():</p>
+
+        <div class="first">
+            <h1>10% opacity</h1>
+        </div>
+
+        <div class="second">
+            <h1>30% opacity</h1>
+        </div>
+
+        <div class="third">
+            <h1>60% opacity</h1>
+        </div>
+
+        <div>
+            <h1>default</h1>
+        </div>
+
+        <p>Notice how the text gets transparent as well as the background color when using the opacity 
+            property.</p>
+    </body>
+</html>

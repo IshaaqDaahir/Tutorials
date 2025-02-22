@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Working With Date And Time</title>
+
+        <style>
+            body{
+                text-align: center;
+                margin-top: 10%;
+                margin-left: 0%;
+                background-color: lightgray;
+            }
+        </style>
+
+        <script>
+            
+       </script>
+    </head>
+    <body>
+
+        <script>
+            let currentDate = new Date();
+            // document.write(currentDate);
+
+            // let christmas = new Date("December 25, 2025");
+            // let christmas = new Date("December 25 2025");
+            // let christmas = new Date("Dec 25 2025");
+            // let christmas = new Date("12/25/2025");
+            // let christmas = new Date("12-25-2025");
+            // let christmas = new Date("2025-12-25");
+            // let christmas = new Date("2025/12/25");
+            // let christmas = new Date("2025.12.25");
+            // let christmas = new Date("2025 12 25");
+            // let christmas = new Date("2025 Dec 25");
+            // let christmas = new Date("2025 December 25");
+
+            // let christmas = new Date("December 25, 2025 23:15:30");
+            // let christmas = new Date("December 25, 2025 23:15:30 GMT-0500");
+
+            // let christmas = new Date("2025, 11, 25");
+
+            let christmas = new Date("December 25, 2025 23:15:30 GMT-0500");
+            // document.write(christmas.getFullYear());
+            // document.write(christmas.getMonth());
+            // document.write(christmas.getDate());
+            // document.write(currentDate.getDay());
+            // document.write(currentDate.getHours());
+            // document.write(currentDate.getMinutes());
+            // document.write(currentDate.getSeconds());
+            // document.write(currentDate.getMilliseconds());
+
+            // document.write(currentDate.toString());
+
+            currentDate.setFullYear(2026);
+            // document.write(currentDate);
+
+            currentDate.setMonth(5);
+            // document.write(currentDate);
+
+            currentDate.setDate(5);
+            // document.write(currentDate);
+
+            currentDate.setHours(15);
+            // document.write(currentDate);
+
+            currentDate.setMinutes(29);
+            // document.write(currentDate);
+
+            currentDate.setSeconds(38);
+            // document.write(currentDate);
+
+            currentDate.setMilliseconds(289);
+            // document.write(currentDate);
+
+            // document.write(currentDate.toDateString());
+            // document.write(currentDate.toTimeString());
+            // document.write(currentDate.toLocaleDateString());
+            // document.write(currentDate.toLocaleTimeString());
+            // document.write(currentDate.toUTCString());
+            
+            document.write(currentDate.toISOString());
+            // document.write(currentDate.toJSON());
+            // document.write(currentDate.toGMTString());
+        </script>
+    </body>
+</html>

@@ -1,0 +1,20 @@
+title,publisher,isbn,qr_code,status
+Switcher,Edu Mind,ddcedb0e852c4043b031adbc,qr_codes/qr_code-ddcedb0e852c4043b031adbc.png,False
+Switcher,Edu Mind,876a29c37e174551852a5644,qr_codes/qr_code-876a29c37e174551852a5644.png,False
+Switcher,Edu Mind,9a4f5a263ca94fe881fc96aa,qr_codes/qr_code-9a4f5a263ca94fe881fc96aa.png,False
+Django Made Easy,Books,103f7df44c3f4b818d7d4964,qr_codes/qr_code-103f7df44c3f4b818d7d4964.png,False
+Django Made Easy,Books,25ec3bdc1acd4b43b77b1b84,qr_codes/qr_code-25ec3bdc1acd4b43b77b1b84.png,False
+Django Made Easy,Books,d799500d005c4ba2b914ae1d,qr_codes/qr_code-d799500d005c4ba2b914ae1d.png,False
+Django Made Easy,Books,fa2ab4a66f324f559931ad06,qr_codes/qr_code-fa2ab4a66f324f559931ad06.png,rented
+Lord of the Wings,X Books,b99cba10e78d4e67bc021e46,qr_codes/qr_code-b99cba10e78d4e67bc021e46.png,False
+Lord of the Wings,X Books,7a61168efbc54a6d949262e2,qr_codes/qr_code-7a61168efbc54a6d949262e2.png,False
+Lord of the Wings,X Books,d6f0a34cdaac48e2a826dfd8,qr_codes/qr_code-d6f0a34cdaac48e2a826dfd8.png,False
+Harry Zotter,test publisher,d89b753e47704fb789dc8117,qr_codes/qr_code-d89b753e47704fb789dc8117.png,False
+Harry Zotter,test publisher,c6cb17c3252d408497414bd0,qr_codes/qr_code-c6cb17c3252d408497414bd0.png,False
+test book,test publisher,092c94e282c4415689339c0a,qr_codes/qr_code-092c94e282c4415689339c0a.png,False
+test book,test publisher,3c7acd3533a8417798a6b0fc,qr_codes/qr_code-3c7acd3533a8417798a6b0fc.png,False
+test book,test publisher,9e9ad22d9c024d7b9bd597d0,qr_codes/qr_code-9e9ad22d9c024d7b9bd597d0.png,False
+test book,test publisher,9aa372efaa1945ddb29fb066,qr_codes/qr_code-9aa372efaa1945ddb29fb066.png,False
+test book,test publisher,15be8260cef94843ac0f3afa,qr_codes/qr_code-15be8260cef94843ac0f3afa.png,False
+test book,test publisher,180765e58024423f991f2a2a,qr_codes/qr_code-180765e58024423f991f2a2a.png,False
+test book,test publisher,8cfcf34af88e4055b510e0ff,qr_codes/qr_code-8cfcf34af88e4055b510e0ff.png,False

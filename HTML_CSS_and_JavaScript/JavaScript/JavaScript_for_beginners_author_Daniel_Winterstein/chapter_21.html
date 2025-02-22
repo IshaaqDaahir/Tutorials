@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Using Event Handlers</title>
+
+        <style>
+          
+        </style>
+
+        <script>
+            function set_status(msg) {
+                window.status = msg;
+            }
+
+            function clear_status() {
+                set_status("");
+            }
+
+            function confirm_link() {
+                check = confirm("This will take you away from our site. Are you sure?");
+                return check;
+            }
+
+            // set_status("Welcome");
+            // clear_status();
+        </script>
+    </head>
+    <body>
+        <a href="https://w3schools.com" onclick="return confirm_link();" onmouseover="set_status('Hello');" onmouseout="clear_status();">Testing</a>
+    </body>
+</html>

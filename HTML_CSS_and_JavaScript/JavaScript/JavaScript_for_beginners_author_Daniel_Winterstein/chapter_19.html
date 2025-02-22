@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Using Functions</title>
+        <style>
+          
+        </style>
+
+        <script>
+           /* function check_email(address) {
+            // var_1 = false;
+            if (address.match(/^.+@.+\..+$/)) {
+                // var_1 = true; We can omit this line.
+                return true;
+            }
+            // return var_1; We can omit this line.
+            return false;
+        } */
+
+        function show_message(message) {
+            // alert(message);
+            document.write("<h1>" + message + "</h1>")
+        }
+
+        function get_message() {
+            inbox = prompt("Enter your message!", "");
+            return (inbox);
+        }
+        </script>
+    </head>
+    <body>
+
+        <script>
+           /* function greet_user(username) {
+            message = "Hello " + username;
+            alert(message);
+           }
+        //    greet_user("Anisa");
+        var_1 = prompt("Name?", "");
+        greet_user(var_1); */
+
+        /* function check_email(address) {
+            // var_1 = false;
+            if (address.match(/^.+@.+\..+$/)) {
+                // var_1 = true; We can omit this line.
+                return true;
+            }
+            // return var_1; We can omit this line.
+            return false;
+        } */
+                            // OR
+        /* function check_email(address) {
+            return address.match(/^.+@.+\..+$/);
+        }
+        check_email("Ishaqtafiyau@gmail.com"); */
+
+        /* function check_email(address) {
+            if (address.match(/^.+@.+\..+$/)) {
+                alert("That is right!");
+            }
+            else{
+                alert("That is wrong!");
+            }
+        }
+        address = prompt("Address?", "");
+        check_email(address); */
+
+        // return_Value_Prompt = prompt("Enter your message here!", "");
+
+        /* show_message("Good Morning Abubakar!");
+        show_message("Good Morning Is'haaq!"); */
+
+        message = get_message();
+        show_message(message);
+
+        </script>
+    </body>
+</html>

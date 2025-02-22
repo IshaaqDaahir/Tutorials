@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Chapter 6: Forms</title>
+        <style>
+            body{
+                margin-top: 30px;
+                margin-left: 20%;
+            }
+        </style>
+        <script>
+            
+        </script>
+    </head>
+    <body>
+        <form action="http://www.example.org/membership/login.aspx" method="get" novalidate target="_blank" 
+            name="frmSearch" autocomplete="on" enctype="multipart/form-data">
+
+            <p>Search: <br>
+            <input type="text" name="txtSearch" size="20" maxlength="64" placeholder="Search for..."></p>
+            <p><input type="submit" value="Submit"></p>
+        </form>
+
+        <form action="http://www.example.org/membership/login.aspx" method="post">
+            <p>Username: <br>
+            <input type="text" name="txtUsername" placeholder="Enter username..." size="20" maxlength="20"></p>
+            <p>Password: <br>
+            <input type="password" name="pwdPassword" placeholder="Enter password" size="20" maxlength="20"></p>
+            <p><input type="submit" value="Log in"></p>
+        </form>
+
+        <form action="http://www.example.org/membership/login.aspx" method="post">
+            <p>Please tell us what you think of the site and click submit:</p>
+            <textarea name="txtFeedback" id="" cols="50" rows="20" wrap="hard" required
+                placeholder="Enter your feedback here..."></textarea>
+            <p><input type="submit" value="Submit"></p>
+        </form>
+
+        <form action="http://www.example.org/membership/login.aspx" method="post">
+            <p><input type="submit" name="btnVoteRed" value="Vote for reds"></p>
+            <p><input type="submit" name="btnVoteBlue" value="Vote for blues"></p>
+            <p><input type="reset" value="Clear form" name="" id=""></p>
+            <p><input type="button" value="Calculate" onclick="calculate();"></p>
+        </form>
+
+        <form action="http://www.example.org/membership/login.aspx" method="post">
+            <p><button type="button">Submit</button></p>
+            <p><button type="reset"><b>Clear this form</b> I want to start again</button></p>
+            <p><button type="button"><img src="car-mechanic.jpg" alt="submit" height="30" width="50"></button></p>
+        </form>         
+
+        <form action="http://www.example.org/membership/login.aspx" method="post" name="frmCV">
+            Which of the following skills do you possess? Select all that apply. <br>           
+            <input type="checkbox" name="chkSkills" value="html">HTML <br>
+            <input type="checkbox" name="chkSkills" value="css">CSS <br>
+            <input type="checkbox" name="chkSkills" value="javascript">JavaScript <br>
+            <input type="checkbox" name="chkSkills" value="aspnet">ASP.Net <br>
+            <input type="checkbox" name="chkSkills" value="php">PHP
+        </form>
+        <br>
+        <form action="http://www.example.com/flights.aspx" method="get" name="frmFlightBooking">
+            Please select which class of travel you wish to fly: <br>
+            <input type="radio" name="radClass" value="First">First class <br>
+            <input type="radio" name="radClass" value="Business">Business class <br>
+            <input type="radio" name="radClass" value="Economy">Economy class
+        </form>
+        <br>
+        <form action="" method="post">
+            Please select your favorite color:
+            <select name="selColor" id="">
+                <option selected="selected" value="">Select color</option>
+                <option value="red">Red</option>
+                <option value="green">Green</option>
+                <option value="blue">Blue</option>
+            </select>
+        </form>
+        <br>
+        <form action="http://www.example.org/days.aspx" method="get" name="frmDays">
+            <select name="selDay" id="" size="2" required>
+                <option value="Mon">Monday</option>
+                <option value="Tue">Tuesday</option>
+                <option value="Wed">Wednesday</option>
+                <option value="Thu">Thursday</option>
+                <option value="Fri">Friday</option>
+                <option value="Sat">Saturday</option>
+                <option value="Sun">Sunday</option>
+            </select>
+            <br><br>
+            <input type="submit" value="Submit">
+        </form>
+        <br>
+        <form action="http://www.example.org/days.aspx" method="get" name="frmDays">
+            Please select more than one day of the week (to select multiple days hold down the control key and click 
+            on your chosen days): <br>
+            <select name="selDay" id="" multiple required>
+                <option value="Mon">Monday</option>
+                <option value="Tue">Tuesday</option>
+                <option value="Wed">Wednesday</option>
+                <option value="Thu">Thursday</option>
+                <option value="Fri">Friday</option>
+                <option value="Sat">Saturday</option>
+                <option value="Sun">Sunday</option>
+            </select>
+            <br><br>
+            <input type="submit" value="Submit">
+        </form>
+        <br>
+        <form action="" method="get" name="frmInfo">
+            Please select the product you are interested in: <br>
+            <select name="selInfornation" id="">
+                <optgroup label="Hardware">
+                    <option value="Desktop">Desktop computers</option>
+                    <option value="Laptop">Laptop computers</option>
+                </optgroup>
+                <optgroup label="Software">
+                    <option value="OfficeSoftware">Office software</option>
+                    <option value="Games">Games</option>
+                </optgroup>
+                <optgroup label="Peripherals">
+                    <option value="Monitors">Monitors</option>
+                    <option value="InputDevices">Input Devices</option>
+                    <option value="Storage">Storage</option>
+                </optgroup>
+            </select>
+            <p><input type="submit" value="Submit" name="" id=""></p>
+        </form>
+        <br>
+        <progress></progress>
+        <br>
+        <meter></meter>
+        <br>
+        <form action="">
+            <fieldset>
+                <input type="text" accesskey="d">
+            </fieldset>
+        </form>
+
+        <h1>Exercise</h1>
+
+        <form action="http://www.example.org/days.aspx" method="post">
+            <label for="email">Email:</label>
+            <input type="email" name="mail" id="email" placeholder="Enter your mail here...">
+            <input type="submit" value="Submit">
+        </form>
+
+        <script>
+           
+        </script>
+    </body>
+</html>

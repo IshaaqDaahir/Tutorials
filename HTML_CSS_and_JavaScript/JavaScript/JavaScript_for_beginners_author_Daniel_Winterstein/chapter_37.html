@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Working with Dates</title>
+
+        <style>
+            body{
+                margin-left: 30%;
+                padding-top: 5%;
+            }
+            label{
+                font-weight: bold;
+            }
+        </style>
+
+        <script>
+            /* dtNow = new Date();
+            // alert(dtNow);
+            // theDate = new Date(2004, 6, 17, 21, 15, 30, 0);
+            // theDate = new Date(2004, 6, 17);
+            // theDate = new Date("Sun, 10 Oct 2000 21:15:00 -0500");
+            // theDate = new Date("Sun, 10 Oct 2000 21:15:00-0500");
+            // theDate = new Date("Sun, 10 Oct 2000 21:15:00");
+            // theDate = new Date("Sun, 10 Oct 2000");
+            theDate = new Date("10 Oct 2000");
+            alert(theDate); */
+
+            function current_date_and_time() {
+                dtNow = new Date();
+                theDate = new Date(1995, 6, 17, 13, 0, 0, 0);
+                newDate = new Date(2004, 6, 17);
+                srtDate = new Date("31 Dec 1999");
+                alert(dtNow);
+                document.write(theDate + "<br><br>" + newDate + "<br><br>" + srtDate);
+                // document.write("<br><br>" + newDate + "<br><br>");
+            }
+        </script>
+    </head>
+    <body>
+
+        <script>
+            current_date_and_time();
+        </script>
+    </body>
+</html>

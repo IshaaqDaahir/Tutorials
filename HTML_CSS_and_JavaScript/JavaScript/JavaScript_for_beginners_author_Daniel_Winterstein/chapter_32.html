@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Form Methods and Event Handlers</title>
+
+        <style>
+            body{
+                margin-left: 30%;
+                padding-top: 5%;
+            }
+        </style>
+
+        <script>
+            function check_form() {
+                objForm = document.getElementById("jsCourseForm").name.value;
+
+                if  (objForm != "Bugs Bunny") {
+                    alert("Sorry chum!\nEither you misspelled your name…\nOr you haven’t got what it takes…\nTry again.");
+                    document.getElementById("text_box").value = "please try again";
+                    document.getElementById("text_box").focus();
+                    document.getElementById("text_box").select();
+                    
+                     
+                    return false;
+                    
+                } else {
+                    document.getElementById("jsCourseForm").submit();
+                    return true;
+                }
+                
+            }
+            
+        </script>
+    </head>
+    <body>
+        <form action="processing_31.html" id="jsCourseForm" method="get">
+            <label for="text">Enter something here:</label>
+            <input type="text" name="name" id="text_box">
+            <input type="button" value="Button" onclick="return check_form();">
+        </form>
+
+
+        <script>
+            
+        </script>
+    </body>
+</html>

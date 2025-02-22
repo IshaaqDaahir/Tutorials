@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Graphics</title>
+    </head>
+    <body>
+       <!--  <h1>Draw a Line</h1>
+       <canvas id="myCanvas1" width="200" height="100" style="border: 1px solid #000000;">
+        Your browser does not support the HTML canvas tag.</canvas> 
+
+        <h1>Draw a Circle</h1>
+        <canvas id="myCanvas2" width="200" height="100" style="border: 1px solid #d3d3d3;">
+            Your browser does not support the HTML canvas tag.</canvas>
+
+        <h1>Draw a Text</h1>
+        <canvas id="myCanvas3" width="200" height="100" style="border: 1px solid #d3d3d3;">
+            Your browser does not support the HTML canvas tag.</canvas>
+
+        <h1>Stroke Text</h1>
+        <canvas id="myCanvas4" width="200" height="100" style="border: 1px solid #d3d3d3;">
+            Your browser does not support the HTML canvas tag.</canvas>
+
+        <h1>Draw Linear Gradient</h1>
+        <canvas id="myCanvas5" width="200" height="100" style="border: 1px solid #d3d3d3;">
+            Your browser does not support the HTML canvas tag.</canvas>
+
+        <h1>Draw Circular Gradient</h1>
+        <canvas id="myCanvas6" width="200" height="100" style="border: 1px solid #d3d3dd;">
+            Your browser does not support the HTML canvas tag.</canvas> -->
+
+        <h1>Draw Image</h1>
+        <p>Image to use:</p>
+        <img id="scream" src="https://www.w3schools.com/html/img_the_scream.jpg" alt="The Scream" 
+        width="220" height="277">
+
+        <p>Canvas to fill:</p>
+        <canvas id="myCanvas7" width="250" height="300" style="border: 1px solid #d3d3d3;">
+            Your browser does not support the HTML canvas tag.</canvas>
+
+        <p><button onclick="myCanvas()">Try it</button></p>
+
+        <script>
+            /* var c = document.getElementById("myCanvas1");
+            var ctx = c.getContext("2d");
+            ctx.moveTo(0,0);
+            ctx.lineTo(200,100);
+            ctx.stroke();
+        
+            var c = document.getElementById("myCanvas2");
+            var ctx = c.getContext("2d");
+            ctx.beginPath();
+            ctx.arc(90,50,40,0,2*Math.PI);
+            ctx.stroke();
+
+            var c = document.getElementById("myCanvas3");
+            var ctx = c.getContext("2d");
+            ctx.font = "30px Arial";
+            ctx.fillText("Hello World!",10,50);
+
+            var c = document.getElementById("myCanvas4");
+            var ctx = c.getContext("2d");
+            ctx.font = "30px Arial";
+            ctx.strokeText("Hello World!",10,50);
+
+            var c = document.getElementById("myCanvas5");
+            var ctx = c.getContext("2d");
+
+            // Create gradient
+            var grd = ctx.createLinearGradient(0,0,200,0);
+            grd.addColorStop(0,"red");
+            grd.addColorStop(1,"white");
+
+            // Fill with gradient
+            ctx.fillStyle = grd;
+            ctx.fillRect(10,10,150,80);
+            
+            var c = document.getElementById("myCanvas6");
+            var ctx = c.getContext("2d");
+
+            // Create gradient
+            var grd = ctx.createRadialGradient(75,50,5,90,60,100);
+            grd.addColorStop(0,"red");
+            grd.addColorStop(1,"white");
+
+            //Fill with gradient
+            ctx.fillStyle = grd;
+            ctx.fillRect(10,10,150,80) */
+
+            function myCanvas() {
+                var c = document.getElementById("myCanvas7");
+                var ctx = c.getContext("2d");
+                var img = document.getElementById("scream");
+                ctx.drawImage(img,10,10);
+            }
+        </script>
+    </body>
+</html>

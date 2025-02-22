@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Higher Order Functions</title>
+
+        <style>
+            body{
+                margin-top: 10%;
+                margin-left: 40%;
+                background-color: lightgray;
+            }
+        </style>
+
+        <script>
+            
+            const numbers = [1, 2, 3, 4, 5];
+
+            /* const squaredNumbers = numbers.map(
+                (number) => number * number 
+            );
+
+            alert(squaredNumbers); */
+
+            /* const words = ["this", "is", "such", "a", "great", "day"];
+            const capitalizedWords = words.map(
+                (word) => word.toUpperCase() 
+            );
+
+            alert(capitalizedWords); */
+
+            /* const higherOrderFunction = (callback) => {
+                const string = "HOFs are really cool!";
+                callback(string);
+            }
+
+            (higherOrderFunction(alert)); */
+
+            const callMeTwice = () => alert;
+
+            (callMeTwice()("Hey, this works!"));
+       </script>
+    </head>
+    <body>
+
+        
+        
+        <script>
+            
+        </script>
+    </body>
+</html>

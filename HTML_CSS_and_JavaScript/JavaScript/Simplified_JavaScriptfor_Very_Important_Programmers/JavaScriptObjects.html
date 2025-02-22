@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JavaScript Objects</title>
+
+        <style>
+            body{
+                margin-top: 10%;
+                margin-left: 40%;
+                background-color: lightgray;
+            }
+        </style>
+
+        <script>
+            /* const carColor = "red";
+            const carMake = "Tesla";
+            const carModel = "Cybertruck";
+            const carMileage = 30; */
+
+            const myCar = {
+                color: "red",
+                make: "Tesla",
+                model: "Cybertruck",
+                mileage: 30
+            }
+            // alert(myCar.model);
+            // alert(myCar["mileage"]);
+
+            const propertyName = "color";
+            // alert(myCar[propertyName]);
+
+            const myFavoriteBook = {
+                title: "The Hobbit",
+                title: "The lord of the Rings"
+            }
+            // alert(myFavoriteBook.title);
+
+            const myFavoriteDress = {
+                1: "green"
+            }
+            // alert(myFavoriteDress.1);
+            // alert(myFavoriteDress[1]);
+
+            const myFavoriteMeal = {
+                // plate type: "ceramic",
+                "plate type": "ceramic",
+                "": "valid but not recommended"
+            }
+            // alert(myFavoriteMeal["plate type"]);
+            // alert(myFavoriteMeal[""]);
+
+            const myFavoriteCar = {
+                "engine*type": "electric"
+            }
+            // alert(myFavoriteCar["engine*type"]);
+
+            const myFavoriteMovie = {
+                title: "Titanic",
+                Title: "The Lion King"
+            }
+            // alert(myFavoriteMovie.title);
+            // alert(myFavoriteMovie.Title);
+
+            const person = {
+                fullName: "Victor Otedola",
+                sayHello: function () {
+                    document.write("Hello! My name is " + this.fullName);
+                }
+            }
+            // alert(person.sayHello());
+
+            /* // This should be avoided. 
+            const person2 = {
+                fullName: "Linda Chima",
+                sayHello: () => {
+                    document.write("Hello! My name is " + this.fullName);
+                }
+            }
+            alert(person2.sayHello()); */
+
+            const student = {
+                name: "Kachi",
+                age: 17
+            }
+            student.gender = "Male";
+            student["grade"] = 12;
+
+            student.age = 18;
+            student["grade"] = 13;
+
+            Object.defineProperty(student, "school", {
+                value: "University of Lagos",
+                writable: false,
+                enumerable: true,
+                configurable: true
+            });
+            student.school = "Havard University";
+            delete student.school;
+
+            Object.defineProperty(student, "language", {
+                value: "English",
+                writable: true,
+                enumerable: true,
+                configurable: false
+            });
+            delete student.language;
+            // alert(student.language);
+
+            const computerInfo = {
+                brand: "Apple",
+                model: "MacBook Pro",
+                color: "Silver"
+            }
+            // alert(computerInfo.toString());
+            // alert(JSON.stringify(computerInfo));
+            Object.getPrototypeOf(computerInfo).isExpensive = true;
+            // alert(computerInfo.isExpensive);
+            // alert(Object.keys(computerInfo));
+            // alert(Object.values(computerInfo));
+            // alert(Object.entries(computerInfo));
+
+            const newComputerInfo = Object.assign({}, computerInfo);
+            // alert(newComputerInfo);
+
+            /* Object.freeze(computerInfo);
+            computerInfo.brand = "Dell";
+            alert(computerInfo.brand); */
+
+            Object.seal(computerInfo);
+            computerInfo.price = 200000;
+            // alert(computerInfo.price);
+
+            const attendee = {
+                name: "Peter Okoye",
+                age: 30,
+                email: "peterokoye@nonexistentmail.com",
+                ticketType: "VIP"
+            }
+            
+            // const {name, age, email, ticketType} = attendee;
+            // alert(name);
+            // alert(age);
+            // alert(email);
+            // alert(ticketType);
+            
+            const {name, isPaid = false} = attendee;
+            // alert(isPaid);
+
+            const {name: attendeeName} = attendee;
+            // alert(attendeeName);
+
+            const attendeeNames = [
+                "Peter Okoye",
+                "Paul Okoye",
+                "Lynda Okoye",
+                "Rita Okoye"
+            ];
+
+            /* const [
+                firstAttendee,
+                secondAttendee,
+                thirdAttendee,
+                fourthAttendee
+            ] = attendeeNames;
+            // alert(firstAttendee);
+            alert(thirdAttendee); */
+
+            const [firstAttendee, , thirdAttendee] = attendeeNames;
+            alert(thirdAttendee);
+       </script>
+    </head>
+    <body>
+
+        
+        
+        <script>
+            
+        </script>
+    </body>
+</html>

@@ -1,0 +1,15 @@
+Purpose: ehlo() is used to identify the client (your script) to the SMTP server.
+Details: It sends an EHLO (Extended Hello) command to the SMTP server. This is part of the SMTP protocol, which establishes communication between the client and the server.
+Functionality:
+EHLO checks the server's capabilities and informs it of the client's presence.
+It is used to initialize the communication session.
+The server responds with a list of features or extensions it supports (e.g., STARTTLS, AUTH, etc.).
+Why It's Necessary:
+The EHLO command is typically the first step in the SMTP conversation. Without it, the server might not recognize the client or establish a proper session. Some servers may allow communication with a basic HELO command, but EHLO is preferred because it supports extended SMTP capabilities.
+
+How It Works in Your Code:
+Connection Establishment: smtplib.SMTP_SSL("smtp.gmail.com", 465) creates a secure SSL connection to Gmail's SMTP server on port 465.
+Identification with EHLO: gmail.ehlo() identifies your client to the Gmail SMTP server and ensures that the server is ready for further commands.
+Login: After establishing the communication session, gmail.login(from_email, from_password) sends your credentials to authenticate the connection.
+Message Sending: Finally, gmail.send_message(msg) sends the email.
+In summary, ehlo() is a critical step to establish a proper SMTP session and to negotiate the server's extended features for email sending.

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Creating a JavaScript Clock</title>
+
+        <style>
+            body{
+                margin-top: 10%;
+                margin-left: 40%;
+                background-color: lightgray;
+            }
+        </style>
+
+        <script>
+            function minutes_and_seconds_less_than_10() {
+                newDate = new Date();
+                current_hour = newDate.getHours();
+                current_minute = newDate.getMinutes();
+                current_second = newDate.getSeconds();
+                convert_clock = current_hour - 12;
+
+                if (current_hour > 12) {
+                    document.getElementById("clockBox").value = (convert_clock + ":"+ "0" + current_minute + ":" + "0" + current_second + " " + "pm");
+                } else if (current_hour == 0) {
+                    current_hour = 12;
+                    document.getElementById("clockBox").value = (current_hour + ":"+ "0" + current_minute + ":" + "0" + current_second + " " + "pm");
+                } 
+                else if (convert_clock == 0) {
+                    current_hour = 12;
+                    document.getElementById("clockBox").value = (current_hour + ":"+ "0" + current_minute + ":" + "0" + current_second + " " + "pm");
+                }
+                else if (current_hour == 12) {
+                    document.getElementById("clockBox").value = (current_hour + ":"+ "0" + current_minute + ":" + "0" + current_second + " " + "pm");
+                } else if (current_hour < 12) {
+                    document.getElementById("clockBox").value = (current_hour + ":"+ "0" + current_minute + ":" + "0" + current_second + " " + "am");
+                } else {
+                    document.getElementById("clockBox").value = (current_hour + ":"+ "0" + current_minute + ":" + "0" + current_second + " " + "");
+                }
+            }
+
+            function minutes_and_seconds_greater_than_10() {
+                newDate = new Date();
+                current_hour = newDate.getHours();
+                current_minute = newDate.getMinutes();
+                current_second = newDate.getSeconds();
+                convert_clock = current_hour - 12;
+
+                if (current_hour > 12) {
+                    document.getElementById("clockBox").value = (convert_clock + ":"+ current_minute + ":" + current_second + " " + "pm");
+                } else if (current_hour == 0) {
+                    current_hour = 12;
+                    document.getElementById("clockBox").value = (current_hour + ":"+ current_minute + ":" + current_second + " " + "pm");
+                } 
+                else if (convert_clock == 0) {
+                    current_hour = 12;
+                    document.getElementById("clockBox").value = (current_hour + ":"+ current_minute + ":" + current_second + " " + "pm");
+                }
+                else if (current_hour == 12) {
+                    document.getElementById("clockBox").value = (current_hour + ":"+ current_minute + ":" + current_second + " " + "pm");
+                } else if (current_hour < 12) {
+                    document.getElementById("clockBox").value = (current_hour + ":"+ current_minute + ":" + current_second + " " + "am");
+                } else {
+                    document.getElementById("clockBox").value = (current_hour + ":"+ current_minute + ":" + current_second + " " + "");
+                }
+            }
+
+            function minutes_less_seconds_greater_than_10() {
+                newDate = new Date();
+                current_hour = newDate.getHours();
+                current_minute = newDate.getMinutes();
+                current_second = newDate.getSeconds();
+                convert_clock = current_hour - 12;
+
+                if (current_hour > 12) {
+                    document.getElementById("clockBox").value = (convert_clock + ":"+ "0" + current_minute + ":" + current_second + " " + "pm");
+                } else if (current_hour == 0) {
+                    current_hour = 12;
+                    document.getElementById("clockBox").value = (current_hour + ":"+ "0" + current_minute + ":" + current_second + " " + "pm");
+                } 
+                else if (convert_clock == 0) {
+                    current_hour = 12;
+                    document.getElementById("clockBox").value = (current_hour + ":"+ "0" + current_minute + ":" + current_second + " " + "pm");
+                }
+                else if (current_hour == 12) {
+                    document.getElementById("clockBox").value = (current_hour + ":"+ "0" + current_minute + ":" + current_second + " " + "pm");
+                } else if (current_hour < 12) {
+                    document.getElementById("clockBox").value = (current_hour + ":"+ "0" + current_minute + ":" + current_second + " " + "am");
+                } else {
+                    document.getElementById("clockBox").value = (current_hour + ":"+ "0" + current_minute + ":" + current_second + " " + "");
+                }
+            }
+
+            function minutes_greater_seconds_less_than_10() {
+                newDate = new Date();
+                current_hour = newDate.getHours();
+                current_minute = newDate.getMinutes();
+                current_second = newDate.getSeconds();
+                convert_clock = current_hour - 12;
+
+                if (current_hour > 12) {
+                    document.getElementById("clockBox").value = (convert_clock + ":"+ current_minute + ":" + "0" + current_second + " " + "pm");
+                } else if (current_hour == 0) {
+                    current_hour = 12;
+                    document.getElementById("clockBox").value = (current_hour + ":"+ current_minute + ":" + "0" + current_second + " " + "pm");
+                } 
+                else if (convert_clock == 0) {
+                    current_hour = 12;
+                    document.getElementById("clockBox").value = (current_hour + ":"+ current_minute + ":" + "0" + current_second + " " + "pm");
+                }
+                else if (current_hour == 12) {
+                    document.getElementById("clockBox").value = (current_hour + ":"+ current_minute + ":" + "0" + current_second + " " + "pm");
+                } else if (current_hour < 12) {
+                    document.getElementById("clockBox").value = (current_hour + ":"+ current_minute + ":" + "0" + current_second + " " + "am");
+                } else {
+                    document.getElementById("clockBox").value = (current_hour + ":"+ current_minute + ":" + "0" + current_second + " " + "");
+                }
+            }
+
+            newDate = new Date();
+            current_minute = newDate.getMinutes();
+            current_second = newDate.getSeconds();
+
+            function current_date_and_time() {
+                if (current_minute < 10 && current_second < 10) {
+                    minutes_and_seconds_less_than_10();
+                } else if (current_minute > 10 && current_second > 10) {
+                    minutes_and_seconds_greater_than_10();
+                } else if (current_minute < 10 && current_second > 10) {
+                    minutes_less_seconds_greater_than_10();
+                } else if (current_minute > 10 && current_second < 10) {
+                    minutes_greater_seconds_less_than_10();
+                } else if (current_minute > 10 && current_second == 10) {
+                    minutes_and_seconds_greater_than_10();
+                }else if (current_minute < 10 && current_second == 10) {
+                    minutes_less_seconds_greater_than_10();
+                }
+                else {
+                    minutes_and_seconds_greater_than_10();
+                }
+            }
+
+            timer = "";
+            timer_running = false;
+
+            var interval = setInterval(start_clock, 1000);
+            function start_clock() {
+                current_date_and_time();
+            }
+            
+            // timer = setTimeout("start_clock()", 500);
+            
+            timer_running = true;
+
+            function stop_clock() {
+                if (timer_running == true) {
+                    // window.clearTimeout(timer);
+                    clearInterval(interval);
+                    timer_running = false;
+                } 
+            }
+       </script>
+    </head>
+    <body>
+
+        <form action="process.php">
+            <input type="text" name="clock" id="clockBox" style="border-radius: 5px; color: white; 
+                background-color: black; font-size: 40px; padding: 5px; font-weight: bold; text-align: center;">
+            <br><br>
+            <input type="button" name="start" id="start" value="Start" onclick="start_clock();" style="font-size: 20px; padding: 5px; 
+                margin-left: 145px; font-weight: bold; text-align: center;">
+            
+            <input type="button" name="stop" id="stop" value="Stop" onclick="stop_clock();" style="font-size: 20px; padding: 5px; 
+                margin-left: 145px; font-weight: bold; text-align: center;">
+        </form>
+
+        
+        <script>
+            start_clock();
+        </script>
+    </body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Browser Storage</title>
+
+        <style>
+            body{
+                text-align: center;
+                margin-top: 10%;
+                margin-left: 0%;
+                background-color: lightgray;
+            }
+        </style>
+
+        <script>
+            
+       </script>
+    </head>
+    <body>
+
+
+        <script>
+            document.cookie = "name=Ada Lovelace; expires=Fri, 23 Nov 2035 12:00:00 U\TC; path=/";
+            document.cookie = "favorite_language=JavaScript";
+
+            const cookies = document.cookie.split("; ");
+
+            const nameCookie = cookies.find((cookie) => {
+                cookie.startsWith("name");
+            });
+            // alert(nameCookie);
+
+            localStorage.setItem("username", "ada_lovelace");
+            // const username = localStorage.getItem("username");
+
+            // document.write(username);
+            // document.write(localStorage);
+
+            const allUsernames = [
+                "ada_lovelace",
+                "grace_hopper",
+                "alan_turing"
+            ];
+            localStorage.setItem("allUsernames", allUsernames);
+
+            const storedUsernames = localStorage.getItem("allUsernames");
+            // document.write(storedUsernames);
+
+            const usernamesArray = storedUsernames.split(",");
+            // console.log(usernamesArray);
+
+            const user = {
+                username: "ada_lovelace",
+                favoriteLanguage: "JavaScript"
+            }
+            localStorage.setItem("user", JSON.stringify(user));
+
+            const storedUser = localStorage.getItem("user");
+            // document.write(storedUser);
+
+            const userObject = JSON.parse(storedUser);
+            // console.log(userObject);
+
+            localStorage.removeItem("username");
+            // document.write(localStorage.getItem("username"));
+
+            localStorage.clear();
+            // console.log(localStorage);
+
+            sessionStorage.setItem("username", "ada_lovelace");
+            
+            const username = sessionStorage.getItem("username");
+            // document.write(username);
+
+            sessionStorage.removeItem("username");
+            // document.write(sessionStorage.getItem("username"));
+
+            sessionStorage.clear()
+            console.log(sessionStorage);
+        </script>
+    </body>
+</html>

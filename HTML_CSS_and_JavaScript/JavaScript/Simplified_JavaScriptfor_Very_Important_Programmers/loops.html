@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Loops</title>
+
+        <style>
+            body{
+                margin-top: 10%;
+                margin-left: 40%;
+                background-color: lightgray;
+            }
+        </style>
+
+        <script>
+            /* let numbers = [1, 2, 3, 4, 5];
+            let doubled = numbers.map(
+                (number) => number * 2
+            );
+            document.write("<h1>" + doubled + "</h1>"); */
+
+            /* let numbers = [1, 2, 3, 4, 5];
+            for (let i = 0; i < numbers.length; i++) {
+                numbers[i] = numbers[i] * 2;
+            }
+            document.write("<h1>" + numbers + "</h1>"); */
+
+            let numbers = [1, 2, 3, 4, 5];
+            let doubled = [];
+
+            for (let i = 0; i < numbers.length; i++) {
+                doubled.push(numbers[i] * 2);
+            }
+            // document.write("<h1>" + doubled + "</h1>");
+
+            for (let i = 1; i <= 10; i++) {
+                if (i === 5) {
+                    continue;
+                }
+                // document.write("<h1>" + i + "</h1>");
+            }
+
+            for (let i = 1; i <= 10; i++){
+                if (i === 5){
+                    break;
+                }
+                // document.write("<h1>" + i + "</h1>");
+            }
+
+            let person = {
+                name: "Jane",
+                age: 27,
+                city: "Kigali"
+            }
+
+            for (let i = 0; i < Object.keys(person).length; i++) {
+                // document.write("<h1>" + `${Object.keys(person)[i]}: ${person[Object.keys(person)[i]]}` + "</h1>");
+                
+            }
+
+            for (let i = 0; i < Object.keys(person).length; i++) {
+                // document.write("<h1>" + Object.keys(person)[i] + ": " + person[Object.keys(person)[i]] + "</h1>");
+                
+            }
+
+            for (let key in person){
+                // document.write("<h1>" + key + ": " + person[key] + "<h1>");
+            }
+
+            for (let key in person){
+                // document.write("<h1>" + `${key}: ${person[key]}` + "<h1>");
+                }
+
+            if ("name" in person) {
+                // document.write("<h1>" + "The person object has a name property." + "<h1>");
+            }
+
+            let fruits = ["apple", "banana", "orange"];
+            
+            if ("apple" in fruits){
+                // document.write("<h1>" + "The apple element exists in the fruits array." + "<h1>");
+            }
+
+            let names = ["Jane", "John", "Ada"];
+            
+            for (let index in names){
+                // document.write("<h1>" + names[index] + "<h1>");
+            }
+
+            for (let name of names) {
+                // document.write("<h1>" + name + "<h1>");
+            }
+
+            let name = "Jane";
+
+            for (let character of name) {
+                // document.write("<h1>" + character + "<h1>");
+            }
+
+            // let dieRoll = 0;
+            // let dieRoll = 6;
+
+            /* while (dieRoll !== 6) {
+                dieRoll = Math.ceil(Math.random() * 6);
+                // document.write("<h1>" + "You roll a " + dieRoll + "<h1>");
+                // document.write("<h1>" + `You roll a ${dieRoll}` + "<h1>");
+            } */
+
+            let dieRoll = 6;
+
+            do {
+                dieRoll = Math.ceil(Math.random() * 6);
+                // document.write("<h1>" + `You rolled a ${dieRoll}` + "</h1>")
+            } while (dieRoll !== 6);
+
+            /* // NUMBER GUESSING GAME.
+            let correctNumber = Math.ceil(Math.random() * 10);
+            let guess = 0;  
+            // let guess = correctNumber;
+
+            do {
+                guess = prompt("Guess a number between 1 and 10");
+                if (guess == correctNumber) {
+                    alert("You guessed the correct number!");
+                } else {
+                    alert("Sorry, that was incorrect. Try again.");
+                }
+            } while (guess != correctNumber); */
+
+            let correctNumber = Math.ceil(Math.random() * 10);
+            let guess = correctNumber;
+            // let guess = 0;
+
+            while (guess != correctNumber) {
+                guess = prompt("Guess a number between 1 and 10");
+                if (guess == correctNumber) {
+                    alert("You guessed the correct number!")
+                } else {
+                    alert("Sorry, that was incorrect. Try again.")
+                }
+            }
+       </script>
+    </head>
+    <body>
+
+        
+        
+        <script>
+            
+        </script>
+    </body>
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Retrieving Information from Date Objects</title>
+
+        <style>
+            body{
+                margin-left: 30%;
+                padding-top: 5%;
+            }
+            label{
+                font-weight: bold;
+            }
+        </style>
+
+        <script>
+            function minutes_less_than_10() {
+                days = ["Sunday, ", "Monday, ", "Tuesday, ", "Wednesday, ", "Thursday, ", "Friday, ", "Saturday, "];
+                months = ["January ", "February ", "March ", "April ", "May ", "June ", "July ", "August ", 
+                            "September ", "October ","November ", "December "];
+                
+                newDate = new Date();
+                current_day = newDate.getDate();
+                current_hour = newDate.getHours();
+                current_minute = newDate.getMinutes();
+                convert_clock = current_hour - 12;
+
+                if (current_hour > 12) {
+                    document.write("<h1>"+"Today it is "+ days[0] + months[8] + current_day + "." + "<br><br>"+
+                                "It is currently "+ convert_clock + ":"+ "0" + current_minute + " " + "pm" +"</h1>");
+                } else if (current_hour == 0) {
+                    current_hour = 12;
+                    document.write("<h1>"+"Today it is "+ days[0] + months[8] + current_day + "." + "<br><br>"+
+                                "It is currently "+ current_hour + ":"+ "0" + current_minute + " " + "pm" +"</h1>");
+                } 
+                else if (convert_clock == 0) {
+                    current_hour = 12;
+                    document.write("<h1>"+"Today it is "+ days[0] + months[8] + current_day + "." + "<br><br>"+
+                                "It is currently "+ current_hour + ":"+ "0" + current_minute + " " + "pm" +"</h1>");
+                }
+                else if (current_hour = 12) {
+                    document.write("<h1>"+"Today it is "+ days[0] + months[8] + current_day + "." + "<br><br>"+
+                                "It is currently "+ current_hour + ":"+ "0" + current_minute + " " + "pm" +"</h1>");
+                } else if (current_hour < 12) {
+                    document.write("<h1>"+"Today it is "+ days[0] + months[8] + current_day + "." + "<br><br>"+
+                                "It is currently "+ current_hour + ":"+ "0" + current_minute + " " + "am" +"</h1>");
+                } else {
+                    document.write("<h1>"+"Today it is "+ days[0] + months[8] + current_day + "." + "<br><br>"+
+                                "It is currently "+ current_hour + ":"+ "0" + current_minute + " " + "" + "</h1>");
+                }
+
+                mseconds = newDate.getTime();
+                seconds = (mseconds/1000);
+                minutes = (seconds/60);
+                hours = (minutes/60);
+                days_num = (hours/24);
+                n = Math.floor(days_num);
+
+                document.write("<h1>"+"It is " + n + " days since the start of the millennium."+"<h1>");
+            }
+
+            function minutes_greater_than_10() {
+                days = ["Sunday, ", "Monday, ", "Tuesday, ", "Wednesday, ", "Thursday, ", "Friday, ", "Saturday, "];
+                months = ["January ", "February ", "March ", "April ", "May ", "June ", "July ", "August ", 
+                            "September ", "October ","November ", "December "];
+                
+                newDate = new Date();
+                current_day = newDate.getDate();
+                current_hour = newDate.getHours();
+                current_minute = newDate.getMinutes();
+                convert_clock = current_hour - 12;
+
+                if (current_hour > 12) {
+                    document.write("<h1>"+"Today it is "+ days[0] + months[8] + current_day + "." + "<br><br>"+
+                                "It is currently "+ convert_clock + ":"+ current_minute + " " + "pm" +"</h1>");
+                } else if (current_hour == 0) {
+                    current_hour = 12;
+                    document.write("<h1>"+"Today it is "+ days[0] + months[8] + current_day + "." + "<br><br>"+
+                                "It is currently "+ current_hour + ":"+ current_minute + " " + "pm" +"</h1>");
+                } 
+                else if (convert_clock == 0) {
+                    current_hour = 12;
+                    document.write("<h1>"+"Today it is "+ days[0] + months[8] + current_day + "." + "<br><br>"+
+                                "It is currently "+ current_hour + ":"+ current_minute + " " + "pm" +"</h1>");
+                }
+                else if (current_hour = 12) {
+                    document.write("<h1>"+"Today it is "+ days[0] + months[8] + current_day + "." + "<br><br>"+
+                                "It is currently "+ current_hour + ":"+ current_minute + " " + "pm" +"</h1>");
+                } else if (current_hour < 12) {
+                    document.write("<h1>"+"Today it is "+ days[0] + months[8] + current_day + "." + "<br><br>"+
+                                "It is currently "+ current_hour + ":"+ current_minute + " " + "am" +"</h1>");
+                } else {
+                    document.write("<h1>"+"Today it is "+ days[0] + months[8] + current_day + "." + "<br><br>"+
+                                "It is currently "+ current_hour + ":"+ current_minute + " " + "" + "</h1>");
+                }
+
+                mseconds = newDate.getTime();
+                seconds = (mseconds/1000);
+                minutes = (seconds/60);
+                hours = (minutes/60);
+                days_num = (hours/24);
+                n = Math.floor(days_num);
+
+                document.write("<h1>"+"It is " + n + " days since the start of the millennium."+"<h1>");
+            }
+
+            newDate = new Date();
+            current_minute = newDate.getMinutes();
+
+            function current_date_and_time() {
+                if (current_minute < 10) {
+                    minutes_less_than_10();
+                } else {
+                    minutes_greater_than_10();
+                }
+            }
+       </script>
+    </head>
+    <body>
+
+        <script>
+            current_date_and_time();
+        </script>
+    </body>
+</html>

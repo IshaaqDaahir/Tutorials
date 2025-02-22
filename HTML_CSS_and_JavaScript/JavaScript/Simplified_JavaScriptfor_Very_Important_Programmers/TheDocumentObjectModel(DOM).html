@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Learning the DOM</title>
+
+        <style>
+            body{
+                text-align: center;
+                margin-top: 10%;
+                margin-left: 0%;
+                background-color: lightgray;
+            }
+        </style>
+
+        <script>
+            
+       </script>
+    </head>
+    <body>
+        <h1>Using JavaScript to acess the DOM</h1>
+
+        <div id="dom-intro">
+            <p id="dom-definition" class="paragraph">DOM stands for Document Object Model.</p>
+            <p id="dom-example" class="paragraph">We can use the DOM to manipulate the content of a web page.</p>
+        </div>
+        
+        <script>
+            document.querySelector("#dom-definition").parentNode;
+
+            document.querySelector("#dom-definition").parentNode.parentNode;
+
+            document.querySelector("#dom-intro").childNodes;
+
+            document.querySelector("#dom-intro").children;
+
+            document.querySelector("#dom-intro").firstChild;
+
+            document.querySelector("#dom-intro").lastChild;
+
+            (document.querySelector("#dom-intro").firstElementChild);
+
+            (document.querySelector("#dom-intro").lastElementChild);
+
+            (document.querySelector("#dom-definition").nextSibling);
+
+            (document.querySelector("#dom-definition").previousSibling);
+
+            (document.querySelector("#dom-definition").nextElementSibling);
+
+            alert(document.querySelector("#dom-definition").previousElementSibling);
+
+            /* tit = document.title;
+            hea = document.head;
+            bod = document.body;
+
+            tagName = document.getElementsByTagName("h1");
+
+            // tagNameIndex = document.getElementsByTagName("h1")[0];
+
+            tagNameIndex = document.getElementsByTagName("h1").item(0);
+
+            // tagNameContentText = document.getElementsByTagName("h1")[0].textContent;
+
+            // tagNameContentText = document.getElementsByTagName("h1")[0].innerText;
+
+            document.getElementsByTagName("h1")[0].textContent = "DOM Manipulation";
+
+            tagNameContentText = document.getElementsByTagName("h1")[0].textContent;
+
+            const pageHeading = document.getElementsByTagName('h1')[0];
+
+            pageHeading.innerText = 'Learning the DOM with JavaScript';
+
+            // paragraph = document.getElementsByTagName('p')[0].textContent;
+            
+            para = document.getElementsByTagName('p')[0].innerText;
+
+            // definition = document.getElementById("dom-definition");
+
+            definition = document.getElementById("dom-definition").textContent;
+
+            anotherWork = document.getElementById("dom-example").textContent;
+
+            document.getElementsByClassName("paragraph");
+
+            document.querySelector("p");
+
+            document.querySelectorAll("p");
+
+            document.querySelector("#dom-definition");
+
+            document.querySelectorAll(".paragraph");
+
+            document.querySelector("div.paragraph");
+
+            (document.querySelectorAll("p.paragraph"));
+
+            (document.querySelector("p#dom-definition"));
+
+            document.querySelector("dom-definition");
+
+            (document.querySelector("#dom-definition").getAttribute("id"));
+
+            (document.querySelector("#dom-definition").attributes);
+
+            (document.querySelector("#dom-definition").attributes[0]);
+
+            (document.querySelector("#dom-definition").attributes.id);
+
+            (document.querySelector("#dom-definition").attributes[0].value);
+
+            (document.querySelector("#dom-definition").attributes.id.value);
+
+            (document.querySelector("#dom-definition").style);
+
+            (document.querySelector("#dom-definition").style.backgroundColor);
+
+            (document.querySelector("#dom-definition").style["backgroundColor"]);
+
+            (document.querySelector("#dom-definition").style.getPropertyValue("background-color"));
+
+            document.querySelector("#dom-definition").id = "new-dom-definition";
+
+            (document.querySelector("#new-dom-definition").getAttribute("id"));
+
+            (document.querySelector("#new-dom-definition").setAttribute("id", "dom-definition"));
+
+            (document.querySelector("#dom-definition").getAttribute("id"));
+
+            (document.querySelector("#dom-definition").style.backgroundColor = "red");
+
+            (document.querySelector("#dom-definition").style.backgroundColor);
+
+            document.querySelector("#dom-definition").style.setProperty("font-size", "3em");
+
+            (document.querySelector("#dom-definition").style.fontSize);
+
+            // document.body.innerHTML = "<p>The DOM is awesome!</P>";
+
+            document.body.innerHTML += "<p>The DOM is awesome!</P>";
+
+            document.querySelector("div.paragraph").innerHTML = "<button>Click me!</button>";
+
+            let newParagraph1 = document.createElement("p");
+
+            newParagraph1.textContent = "JavaScript is a versatile language.";
+            newParagraph1.setAttribute("id", "about-javascript");
+            document.body.appendChild(newParagraph1);
+
+            let newHeading = document.createElement("h2");
+
+            newHeading.textContent = "Working with the DOM";
+            document.body.insertBefore(newHeading, document.querySelector("#dom-example"));
+
+            let newDiv = document.createElement("div");
+            let newParagraph2 = document.createElement("p");
+
+            newParagraph2.setAttribute("id", "dom-example");
+            newParagraph2.textContent = "Working with the DOM is fun!";
+
+            newDiv.appendChild(newParagraph2);
+
+            document.body.replaceChild(newDiv, document.querySelector("#dom-example"));
+
+            document.querySelector("#dom-example").insertAdjacentHTML("beforebegin", "<p>The DOM is awesome!</p>")
+            
+            let newParagraph3 = document.createElement("p");
+
+            newParagraph3.textContent = "The DOM is really cool!";
+            document.querySelector("#dom-example").insertAdjacentElement("afterend", newParagraph3);
+
+            document.body.insertAdjacentText("beforeend", "JavaScript is for everyone!");
+
+            document.querySelector("#dom-definition").cloneNode(true);
+            
+            let textNode = document.createTextNode(" Learning the DOM requires practice");
+
+            document.querySelector("#dom-example").appendChild(textNode);
+
+            document.body.removeChild(document.querySelector("#dom-definition"));
+
+            document.querySelector("#dom-example").innerHTML = " "; */
+        </script>
+    </body>
+</html>

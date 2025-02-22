@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>String Manipulation</title>
+        <style>
+          
+        </style>
+
+        <script>
+           
+        </script>
+    </head>
+    <body>
+
+        <script>
+           /*  var_1 = "Karen Aaronofskey";
+            var_2 = var_1.toUpperCase();
+            alert(var_2); */
+
+            /* real_name = "Karen";
+            name = prompt("Your name?", "");
+
+            real_name = real_name.toLowerCase();
+            try_name = real_name.toLowerCase();
+
+            if (try_name.indexOf(real_name) > -1){
+                alert("Hello Karen!");
+            }
+            else{
+                alert("Welcome " + name); 
+            } */
+
+           /*  var_1 = prompt("Your email?", "");
+
+            if (var_1.match(/^.+@.+\..+$/)){
+                alert("valid email address");
+            }
+            else{
+                alert("are you sure?")
+            } */
+
+            check_string = prompt("Enter your email address here!","");
+
+            if (check_string.match(/^.+@.+\..+$/)){
+                document.write("<h1>That’s an email address</h1>");
+            }
+            else{
+                document.write("<h1>That doesn’t look like an email address to me!</h1>");
+                document.write("<b>" + check_string + "</b>");
+            }
+        </script>
+    </body>
+</html>

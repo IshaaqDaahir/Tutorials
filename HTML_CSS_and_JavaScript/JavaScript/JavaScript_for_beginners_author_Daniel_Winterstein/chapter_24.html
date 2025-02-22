@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Object Instantiation and Better Rollovers</title>
+
+        <style>
+            body{
+                margin-left: 30%;
+            }
+        </style>
+
+        <script>
+            
+            function swap_image(id, file_name) {
+                img = document.getElementById(id);
+                img.src = file_name;
+            }
+
+            function preload_images() {
+                virtual_image_1 = new Image();
+                virtual_image_1.src = "img_flowers.jpg";
+
+                virtual_image_2 = new Image();
+                virtual_image_2.src = "six_images/contactsover.jpg";
+
+                virtual_image_3 = new Image();
+                virtual_image_3.src = "six_images/IMG_20220417_081420_038.jpg";
+
+                virtual_image_4 = new Image();
+                virtual_image_4.src  = "six_images/IMG_20220417_081435_287.jpg";
+
+                virtual_image_5 = new Image();
+                virtual_image_5.src = "six_images/IMG_20220417_081437_446.jpg";
+
+                virtual_image_6 = new Image();
+                virtual_image_6.src = "six_images/IMG_20220417_081456_664.jpg";
+
+                virtual_image_7 = new Image();
+                virtual_image_7.src = "six_images/IMG_20220417_081643_939.jpg";
+
+                images_array = ["six_images/IMG_20220319_134044_863.jpg", "six_images/IMG_20220319_134106_463.jpg"];
+
+                for (i in images_array){
+                    virtual_image_1 = new Image();
+                    virtual_image_1.src = "six_images/IMG_20220319_134044_863.jpg";
+
+                    virtual_image_2 = new Image();
+                    virtual_image_2.src = "six_images/IMG_20220319_134106_463.jpg";
+                }
+            }
+
+        </script>
+    </head>
+    <body onload="preload_images();">
+        <p><img src="car-mechanic-working-auto-repair-service-professional-31414293.jpg"
+            width="500" height="500" id="car"></p>
+
+        <p><a href="#" onmouseover="swap_image('car', 'img_flowers.jpg'), preload_images();"
+            onmouseout="swap_image('car', 'car-mechanic-working-auto-repair-service-professional-31414293.jpg');"
+            >Text</a></p>
+
+        <p><img src="six_images/contacts.jpg" id="contacts" width="500" height="500" 
+            onmouseover="swap_image('contacts', 'six_images/contactsover.jpg'), preload_images();"
+            onmouseout="swap_image('contacts', 'six_images/contacts.jpg');"></p>
+
+        <p><img src="six_images/home.jpg" id="home" width="500" height="500"
+            onmouseover="swap_image('home', 'six_images/IMG_20220417_081420_038.jpg'), preload_images();"
+            onmouseout="swap_image('home', 'six_images/home.jpg');"></p>
+
+        <p><img src="six_images/people.jpg" id="people" width="500" height="500"
+            onmouseover="swap_image('people', 'six_images/IMG_20220417_081435_287.jpg'), preload_images();"
+            onmouseout="swap_image('people', 'six_images/people.jpg');"></p>
+
+        <p><img src="six_images/products.jpg" id="products" width="500" height="500"
+            onmouseover="swap_image('products', 'six_images/IMG_20220417_081437_446.jpg'), preload_images();"
+            onmouseout="swap_image('products', 'six_images/products.jpg');"></p>
+        
+        <p><img src="six_images/quotes.jpg" id="quotes" width="500" height="500"
+            onmouseover="swap_image('quotes', 'six_images/IMG_20220417_081456_664.jpg'), preload_images();"
+            onmouseout="swap_image('quotes', 'six_images/quotes.jpg');"></p>
+
+        <p><img src="six_images/whatsnew.jpg" id="whatsnew" width="500" height="500"
+            onmouseover="swap_image('whatsnew', 'six_images/IMG_20220417_081643_939.jpg'), preload_images();"
+            onmouseout="swap_image('whatsnew', 'six_images/whatsnew.jpg');"></p>
+        
+        <script>
+            
+        </script>
+    </body>
+</html>

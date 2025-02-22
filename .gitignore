@@ -1,0 +1,37 @@
+# Ignore Career_Identity folder
+Python/Google_IT_Automation_With_Python/Career_Identity/
+
+# Ignore the Google_IT_Automation_With_Python virtual environment
+Python/Google_IT_Automation_With_Python/Course_2/myenv/
+
+# Ignore How_to_Solve_Coding_Project folder
+Python/Google_IT_Automation_With_Python/How_to_Solve_Coding_Project/
+
+# Ignore virtual environments and build artifacts for The_Python_Mega_Course_Build_10_Real_World_Applications course
+Python/Udemy/The_Python_Mega_Course_Build_10_Real_World_Applications/Data_Collector_Web_App/virtual/
+Python/Udemy/The_Python_Mega_Course_Build_10_Real_World_Applications/Data_Collector_Web_App/__pycache__/
+Python/Udemy/The_Python_Mega_Course_Build_10_Real_World_Applications/DB_App/bookstore/dist/
+Python/Udemy/The_Python_Mega_Course_Build_10_Real_World_Applications/DB_App/bookstore/build/
+Python/Udemy/The_Python_Mega_Course_Build_10_Real_World_Applications/DB_App/bookstore/__pycache__/
+Python/Udemy/The_Python_Mega_Course_Build_10_Real_World_Applications/DB_App/bookstore/frontend.spec/
+Python/Udemy/The_Python_Mega_Course_Build_10_Real_World_Applications/Location_Web_Service/virtual/
+Python/Udemy/The_Python_Mega_Course_Build_10_Real_World_Applications/Location_Web_Service/sample_files/
+Python/Udemy/The_Python_Mega_Course_Build_10_Real_World_Applications/My_Site/virtual/
+Python/Udemy/The_Python_Mega_Course_Build_10_Real_World_Applications/Web_Based_Financial_Graph/virtenv/
+Python/Udemy/The_Python_Mega_Course_Build_10_Real_World_Applications/Website_Blocker/hosts/
+Python/Udemy/The_Python_Mega_Course_Build_10_Real_World_Applications/OpenCV/Video_Capturing/__pycache__/
+
+# Ignore virtual environments and build artifacts for Udemy_Django_with_Tailwind_CSS_2023 course
+Python/Udemy/Udemy_Django_with_Tailwind_CSS_2023/br-env/
+Python/Udemy/Udemy_Django_with_Tailwind_CSS_2023/src/core/
+Python/Udemy/Udemy_Django_with_Tailwind_CSS_2023/src/db.sqlite3/
+Python/Udemy/Udemy_Django_with_Tailwind_CSS_2023/src/package-lock.json/
+Python/Udemy/Udemy_Django_with_Tailwind_CSS_2023/src/run_migrations.sh/
+Python/Udemy/Udemy_Django_with_Tailwind_CSS_2023/src/run_reset.sh/
+Python/Udemy/Udemy_Django_with_Tailwind_CSS_2023/src/theme/__pycache__/
+
+# Ignore virtual environments and build artifacts for Django Puddle App
+Python/Django/Puddle/env/
+Python/Django/Puddle/puddle/puddle/
+Python/Django/Puddle/puddle/db.sqlite3/
+

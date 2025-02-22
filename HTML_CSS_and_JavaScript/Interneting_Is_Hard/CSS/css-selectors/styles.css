@@ -1,0 +1,101 @@
+.page > p:first-of-type{
+    color: #7e8184;  /* Light gray */
+    font-style: italic;
+}
+
+.button:link,
+.button:visited{
+    display: block;
+    text-decoration: none;
+
+    color: #fff;
+    background-color: #5995da;  /* Blue */
+    font-weight: bold;
+    padding: 20px;
+    text-align: center;
+    border: 2px solid #5d6063; /* Dark gray */
+    border-radius: 5px;
+
+    width: 200px;
+    margin: 20px auto;
+}
+
+.call-to-action{
+    font-style: italic;
+    background-color: #eeb75a;  /* Yellow */
+}
+
+.page,.sidebar{
+    width: 600px;
+    margin: 0 auto;
+}
+
+.synopsis em{
+    font-style: normal;
+}
+
+a:link{
+    color: blue;
+    text-decoration: none;
+}
+
+a:visited{
+    color: purple;
+}
+
+a:hover{
+    color: aqua;
+    text-decoration: underline;
+}
+
+a:active{
+    color: red;
+}
+
+a:visited:hover{
+    color: orange;
+}
+
+a:visited:active{
+    color: red;
+}
+
+.button:hover,
+.button:visited:hover{
+    color: #fff;
+    background-color: #76aeed;  /* Light blue */
+}
+
+.button:active,
+.button:visited:active{
+    color: #fff;
+    background-color: #5995da;  /* Blue */
+}
+
+#button-2{
+    background-color: #d55c5f;  /* Red */
+}
+
+.call-to-action:link,
+.call-to-action:visited{
+    font-style: italic;
+    background-color: #eeb75a;  /* Yellow */
+}
+
+.call-to-action:hover,
+.call-to-action:visited:hover{
+    background-color: #f5cffe;  /* Light yellow */
+}
+
+.call-to-action:active,
+.call-to-action:visited:active{
+    background-color: #eeb75a;  /* Yellow */
+}
+
+p:last-of-type{
+    margin-bottom: 50px;
+}
+
+#button-2{
+    color: #5d6063; /* Dark gray */
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>APIs</title>
+        <style>
+            .mandatory{
+                color: red;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Receive Server-Sent Event Notifications</h1>
+
+        <h2>Getting server updates</h2>
+        <!-- <div id="result"></div>
+
+        <script>
+            if (typeof(EventSource) !== "undefined") {
+                var source = new EventSource("demo_sse.php");
+                source.onmessage = function(event){
+                    document.getElementById("result").innerHTML += event.data + "<br>";
+                };
+            } else {
+                document.getElementById("result").innerHTML = 
+                "Sorry, your browser does not support server-sent events..."
+            }
+        </script> -->
+
+       <label for="email">Your email address <span class="mandatory">*</span></label><br><br>
+       <input type="email" id="email" name="email" aria-required="true" placeholder="Email"  required
+       autocomplete="email" autocapitalize="">
+        <br><br>
+                
+       <fieldset>
+            <legend>Your date of birth</legend>
+            <label for="dobDay">Day</label>
+            <select name="" id="dobDay" autocomplete="bday-day" aria-required="true" required></select>
+            <label for="dobMonth">Month</label>
+            <select name="" id="dobMonth" autocomplete="bday-month" aria-required="true" required></select>
+            <label for="dobYear">Year</label>
+            <input type="text" id="dobYear" placeholder="YYYY" autocomplete="bday-year" 
+            aria-required="true" required>
+       </fieldset>
+    </body>
+</html>

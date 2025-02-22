@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Requiring Form Values or Selections</title>
+
+        <style>
+            body{
+                margin-left: 30%;
+                padding-top: 5%;
+            }
+            label{
+                font-weight: bold;
+            }
+        </style>
+
+        <script>
+            function check_form() {
+                oOrderForm = document.getElementById("OrderForm").menu.value;
+
+                if (oOrderForm == "") {
+                    alert("Please select a product!");
+                    document.getElementById("OrderForm").menu.focus();
+                    return false;
+                } 
+                if (document.getElementById("OrderForm").Format[0] == ""){
+                    alert("Please specify a format!");
+                    return false;
+                }
+            }
+                
+            function set_format(){
+                
+            }
+                /* oOrderForm = document.getElementById("OrderForm");
+                alert(oOrderForm.Format[0].checked);
+                        alert(FormatSelected);
+                        oOrderForm.reset();
+                    }
+                    
+                } */
+            /* function SetFormat() {
+                oOrderForm = document.getElementById("OrderForm").;
+
+                if (oOrderForm.Product.value == "Greek Boat") {
+                    oOrderForm.Format[0].checked = true;
+                }
+            } */
+        </script>
+    </head>
+    <body>
+       <form action="" id="OrderForm" onsubmit="return check_form();">
+            <select name="menu" onchange="set_format();">
+                <option value="">Select a product</option>
+                <option value="http://www.bbc.co.uk/">The BBC</option>
+                <option value="http://www.google.com/">Google</option>
+                <option value="http://www.hotmail.com/">Hotmail</option>
+                <option value="http://www.ed.ac.uk/">The University of Edinburgh</option>
+                <option value="http://www.apple.com/">Apple Computer</option>
+                <option value="http://www.microsoft.com/">Microsoft Corporation</option>
+                
+                <input type="submit" style="margin-left: 10px;">
+                <br><br>
+                <input type="radio" name="Format" id="shoe">
+                <label for="shoe">Shoe</label>
+                <br><br>
+                <input type="radio" name="Format" id="watch">
+                <label for="watch">Wrist Watch</label>
+                
+            </select>
+            
+       </form>
+
+    
+    </body>
+</html>

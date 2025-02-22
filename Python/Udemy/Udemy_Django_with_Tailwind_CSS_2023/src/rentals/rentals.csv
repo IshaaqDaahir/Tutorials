@@ -1,0 +1,5 @@
+id,book,book_id,isbn,customer,status,is_closed,rent_start_date,rent_end_date,return_date
+4,Django Made Easy,aaca6410-6556-43e1-b6d2-3d070c57ec01,3375b980dd777c20e2c46ab0b01100ee016edcc020d2c86c21b1f107794eb225,john-doe,rented,False,2025-02-12,2025-02-26,
+3,Django Made Easy,aaca6410-6556-43e1-b6d2-3d070c57ec01,3375b980dd777c20e2c46ab0b01100ee016edcc020d2c86c21b1f107794eb225,john-doe,rented,False,2025-02-12,2025-02-26,
+2,Django Made Easy,aaca6410-6556-43e1-b6d2-3d070c57ec01,3375b980dd777c20e2c46ab0b01100ee016edcc020d2c86c21b1f107794eb225,adam-uthmaan,returned,True,2025-02-11,2025-02-25,2025-02-11
+1,Django Made Easy,aaca6410-6556-43e1-b6d2-3d070c57ec01,3375b980dd777c20e2c46ab0b01100ee016edcc020d2c86c21b1f107794eb225,adam-uthmaan,returned,True,2025-02-10,2025-02-24,2025-02-10
