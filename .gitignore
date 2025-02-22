@@ -21,17 +21,4 @@ Python/Udemy/The_Python_Mega_Course_Build_10_Real_World_Applications/Web_Based_F
 Python/Udemy/The_Python_Mega_Course_Build_10_Real_World_Applications/Website_Blocker/hosts/
 Python/Udemy/The_Python_Mega_Course_Build_10_Real_World_Applications/OpenCV/Video_Capturing/__pycache__/
 
-# Ignore virtual environments and build artifacts for Udemy_Django_with_Tailwind_CSS_2023 course
-Python/Udemy/Udemy_Django_with_Tailwind_CSS_2023/br-env/
-Python/Udemy/Udemy_Django_with_Tailwind_CSS_2023/src/core/
-Python/Udemy/Udemy_Django_with_Tailwind_CSS_2023/src/db.sqlite3/
-Python/Udemy/Udemy_Django_with_Tailwind_CSS_2023/src/package-lock.json/
-Python/Udemy/Udemy_Django_with_Tailwind_CSS_2023/src/run_migrations.sh/
-Python/Udemy/Udemy_Django_with_Tailwind_CSS_2023/src/run_reset.sh/
-Python/Udemy/Udemy_Django_with_Tailwind_CSS_2023/src/theme/__pycache__/
-
-# Ignore virtual environments and build artifacts for Django Puddle App
-Python/Django/Puddle/env/
-Python/Django/Puddle/puddle/puddle/
-Python/Django/Puddle/puddle/db.sqlite3/
 
