@@ -5,7 +5,7 @@
     "%SystemRoot%\System32\chcp.com" 65001 > nul
 )
 
-@set "VIRTUAL_ENV=C:\Users\ISHAQ\Desktop\Programming_and_Coding\Tutorials\Python\Django\Applications\studybud\env"
+@set "VIRTUAL_ENV=C:\Users\ISHAQ\Desktop\Programming_and_Coding\Tutorials\Python\Django\Applications\studybud_with_api\env"
 
 @set "VIRTUAL_ENV_PROMPT="
 @if NOT DEFINED VIRTUAL_ENV_PROMPT (

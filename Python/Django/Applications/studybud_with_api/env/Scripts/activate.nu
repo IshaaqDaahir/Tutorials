@@ -32,7 +32,7 @@ export-env {
       }
     }
 
-    let virtual_env = r#'C:\Users\ISHAQ\Desktop\Programming_and_Coding\Tutorials\Python\Django\Applications\studybud\env'#
+    let virtual_env = r#'C:\Users\ISHAQ\Desktop\Programming_and_Coding\Tutorials\Python\Django\Applications\studybud_with_api\env'#
     let bin = r#'Scripts'#
 
     let is_windows = ($nu.os-info.family) == 'windows'
