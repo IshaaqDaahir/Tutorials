@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+{% for course in obj_list %}
+    {% comment %} <p>{{item.id}} - <a href="{% url 'product' item.id %}">{{item.title}}</a></p> {% endcomment %}
+    <p>{{course.id}} - <a href="{{course.get_absolute_url}}">{{course.title}}</a></p>
+{% endfor %}
+
+{% endblock content %}

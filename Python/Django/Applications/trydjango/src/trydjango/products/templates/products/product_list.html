@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+{% for item in qs %}
+    {% comment %} <p>{{item.id}} - <a href="{% url 'product' item.id %}">{{item.title}}</a></p> {% endcomment %}
+    <p>{{item.id}} - <a href="{{item.get_absolute_url}}">{{item.title}}</a></p>
+{% endfor %}
+
+{% endblock content %}
