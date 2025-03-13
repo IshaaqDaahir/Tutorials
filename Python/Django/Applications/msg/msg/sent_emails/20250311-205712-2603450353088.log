@@ -1,0 +1,25 @@
+Content-Type: text/plain; charset="utf-8"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 8bit
+Subject: Password reset on localhost:8000
+From: webmaster@localhost
+To: tafiyau@gmail.com
+Date: Tue, 11 Mar 2025 19:57:12 -0000
+Message-ID: <174172303253.436.3188591919519618637@IshaaqDaahir>
+
+
+You're receiving this email because you requested a password reset for your user account at localhost:8000.
+
+Please go to the following page and choose a new password:
+
+http://localhost:8000/accounts/reset/Mw/cmiq7c-229014845ddae3b56c86c4dd68a4bce3/
+
+Your username, in case you’ve forgotten: tafiyau@gmail.com
+
+Thanks for using our site!
+
+The localhost:8000 team
+
+
+
+-------------------------------------------------------------------------------
