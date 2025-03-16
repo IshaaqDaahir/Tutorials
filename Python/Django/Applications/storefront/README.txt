@@ -1,0 +1,1 @@
+This is a simple app that displays some store items.

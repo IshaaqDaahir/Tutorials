@@ -1,0 +1,1 @@
+This is a messaging app that users can create study groups.

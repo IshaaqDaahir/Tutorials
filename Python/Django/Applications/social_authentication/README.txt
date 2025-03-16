@@ -1,0 +1,1 @@
+This is a simple app that a user logged in socilly. That is a user is logged in using accounts like github (by giving authorization) and other social apps.

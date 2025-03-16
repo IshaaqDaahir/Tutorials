@@ -1,4 +1,5 @@
 {% load static %}
+{% load socialaccount %}
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -43,11 +44,10 @@
 						{% if user.is_authenticated %}
 						<li><a href="#" class="btn btn-default btn-fill" data-toggle="modal" data-target="#postModal">Post</a></li>
 						<li><a href="{% url 'communities:list' %}" class="btn btn-warning btn-fill">Communities</a></li>
-						<li><a href="{% url 'accounts:logout' %}" class="btn btn-simple">Log out</a></li>
+                        <li><a href="{% url 'account_logout' %}" class="btn btn-simple">Log out</a></li>
 						{% else %}
 						<li><a href="{% url 'posts:all' %}" class="btn btn-simple">Posts</a></li>
-						<li><a href="{% url 'accounts:login' %}" class="btn btn-simple">Log in</a></li>
-						<li><a href="{% url 'accounts:signup' %}" class="btn btn-simple">Sign up</a></li>
+                        <li><a href="{% provider_login_url 'github' %}" class="btn btn-simple">Your account</a></li>
 						{% endif %}
 					</ul>
 				</div><!-- /.navbar-collapse -->
