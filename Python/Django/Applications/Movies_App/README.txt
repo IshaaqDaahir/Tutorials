@@ -1,1 +1,0 @@
-This is a simple app that displays some movie title names

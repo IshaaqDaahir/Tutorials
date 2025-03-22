@@ -1,1 +1,0 @@
-This is a simple app that shows the basics of django implementation.
